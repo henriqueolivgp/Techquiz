@@ -1,10 +1,11 @@
 # Techquiz
 
 Tecnologias a usar:
-  • MySQL
 <br/>
-  • Node.js
+    • MySQL
+<br/>
+    • Node.js
   <br/>
-  • Xampp
+    • Xampp
   <br/>
-  • React
+    • React
