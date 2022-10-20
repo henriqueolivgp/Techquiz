@@ -1,4 +1,4 @@
-# Gestão de pedidos de takeaway
+# Techquiz
 
 Tecnologias usar:
 <br/>
