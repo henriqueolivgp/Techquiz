@@ -1,9 +1,10 @@
 # Techquiz
 
-Tecnologias usar:
+Tecnologias a usar:
+  • MySQL
 <br/>
-  • PHP + Laravel ou Node.js + Nest.js
+  • Node.js
   <br/>
-  • MySQL ou PostgreSQL
+  • Xampp
   <br/>
-  • React ou Vue.js ou Angular 
+  • React
