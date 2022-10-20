@@ -1,3 +1,6 @@
 # Gestão de pedidos de takeaway
 
-Planear e desenvolver uma aplicação Web que permita aos seus utilizadores realizar uma sondagem para uma determinada eleição política (legislativas, autárquicas, eleições de um clube, entre outros). 
+Tecnologias usar:
+  • PHP + Laravel ou Node.js + Nest.js 
+  • MySQL ou PostgreSQL 
+  • React ou Vue.js ou Angular 
