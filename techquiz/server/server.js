@@ -1,13 +1,13 @@
 // Importar node packages
-import express from "express";
-import cors from "cors";
-import morgan from "morgan";
-import Router from "express";
-import fs from "fs";
-import "dotenv/config";
+const express = require('express');
+const cors = require('cors');
+const morgan = require('morgan');
+const Router = require('express');
+const fs = require('fs');
+require('dotenv').config();
 
 // Parse to JSON
-const data = JSON.parse(datajson);
+//const data = JSON.parse(datajson);
 
 //--ROUTES--//
 const router = Router();
@@ -20,11 +20,6 @@ router.get("/data", (req, res) => {
 // GET nome method route
 router.get("/nome", (req, res) => {
   res.send(data.nome);
-});
-
-// GET Habilitações Academicas method route
-router.get("/ha", (req, res) => {
-  res.send(data.habilit_academicas);
 });
 
 // POST new data method route
@@ -47,8 +42,16 @@ const app = express();
 // Live Server CORS options
 // aqui é o link do site a correr com o live server
 const corsOptions = {
-  origin: "http://127.0.0.1:5500",
+  origin: "http://127.0.0.1:3000",
 };
+
+app.get('/', (req, res) =>{
+    res.send('Welcome')
+});
+
+app.get('/api', (req, res) =>{
+  res.send('Welcome to the API')
+});
 
 app.use(cors(corsOptions));
 // output dados de pedido HTTP
@@ -59,16 +62,20 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-const apiSufix = "/api";
-// use server routes at /api endpoint
-app.use(apiSufix, router);
+app.use((req, res) =>{
+  res.send(404).send('Page Not Found');
+});
+
+
+/*app.get('/', (req, res) => {
+  console.log('server running');
+});*/
 
 // correr server no url host:port definido em .env
 app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
   console.log(
-    "Server up and running at http://%s:%s:s",
+    "Server up and running at http://%s:%s",
     process.env.SERVER_HOST,
     process.env.SERVER_PORT,
-    apiSufix
   );
 });
