@@ -1,12 +1,15 @@
+import Home from './Home/HomePage';
 import './App';
+import NavBarH from './Home/NavbarH';
 
 function App() {
   return (
     <div className="App">
-      
-      <header className="App-header">
-        
-      </header>
+      <NavBarH/>
+      <Home/>
+      <div className='content'>
+        <h1>Bem Vindo ao site</h1>
+      </div>
     </div>
   );
 }
