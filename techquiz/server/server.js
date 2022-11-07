@@ -13,8 +13,8 @@ require('dotenv').config();
 const router = Router();
 
 // GET nome method route
-//router.get("/nome", (req, res) => {
-//  res.send(data.nome);
+//router.get("/user, (req, res) => {
+//  res.send(data.user);
 //});
 
 // POST new data method route
@@ -56,13 +56,15 @@ app.use(express.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
-
+// envia uma mensagem de erro caso a o pedido nao funcione
 app.use((req, res) =>{
   res.send(404).send('Page Not Found');
 });
 
 
 // correr server no url host:port definido em .env
+// Mostra uma mensagem no terminal a dizer que o server esta a correr
+// em conjunto com um link para abrir o server com os dados do .env
 app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
   console.log(
     "Server up and running at http://%s:%s",
