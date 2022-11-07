@@ -12,15 +12,10 @@ require('dotenv').config();
 //--ROUTES--//
 const router = Router();
 
-// GET all data method route
-router.get("/data", (req, res) => {
-  res.send(data);
-});
-
 // GET nome method route
-router.get("/nome", (req, res) => {
-  res.send(data.nome);
-});
+//router.get("/nome", (req, res) => {
+//  res.send(data.nome);
+//});
 
 // POST new data method route
 router.post("/new_data", (req, res) => {
@@ -66,10 +61,6 @@ app.use((req, res) =>{
   res.send(404).send('Page Not Found');
 });
 
-
-/*app.get('/', (req, res) => {
-  console.log('server running');
-});*/
 
 // correr server no url host:port definido em .env
 app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
