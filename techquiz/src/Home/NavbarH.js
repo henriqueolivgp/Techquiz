@@ -1,10 +1,12 @@
 
 import '../Home/NavBarH.css'
+import User from './Img/user.png'
+import Logo from './Img/TechquizBlack.png'
 
 const NavBarH = () => {
     return ( 
         <nav className="navbar">
-            <h1>TechQuiz</h1>
+                <img src={Logo}/>
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">Register</a>
@@ -14,8 +16,11 @@ const NavBarH = () => {
                 <a href="/create">Register</a>
                 <a href="/create">Register</a>
             </div>
+            <div className="profile">
+                <img src={User}/>
+            </div>        
         </nav>
      );
 }
  
-export default NavBarH;
+export default NavBarH

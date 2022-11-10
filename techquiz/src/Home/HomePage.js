@@ -3,7 +3,7 @@ const HomePage = () => {
         <div className="Page">
             <div className="content">
                 <tittle>
-                    Ola bem vindo ao site
+                    
                 </tittle>
 
             </div>
