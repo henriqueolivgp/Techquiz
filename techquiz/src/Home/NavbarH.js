@@ -8,13 +8,15 @@ const NavBarH = () => {
         <nav className="navbar">
             <div className='logo'>
                 <img src={Logo}/>
-            </div>
-                
+            </div>   
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">Support</a>
                 <a href="/create">AboutUs</a>
                 <a href="/create">Sugestões</a>
+            </div>
+            <div className='textbox'>
+                <input  type="text" placeholder="Search.."/>
             </div>
             <div className="links1">
                 <a href="/login">Login</a>
