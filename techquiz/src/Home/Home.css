@@ -1,0 +1,31 @@
+*{
+    font-family: Origin Tech Demo;
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 1%;
+}
+
+.intro{
+    margin-left: 5%;
+}
+
+.Logo{
+    margin-left: 5%;
+    margin-top: 10%;
+    max-width: 376%;
+    max-height: 15%;
+}
+
+.flex-child {
+    flex: 1;
+    background-color: #F5F0FFFF;
+}  
+
+.banner{
+    margin-left: -10%;
+    width: 110%;
+    height: 100%;
+}
+

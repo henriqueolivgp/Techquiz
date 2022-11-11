@@ -6,13 +6,17 @@
   padding: 8px;
   display: flex;
   align-items: center;
-  max-width: auto;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
   box-shadow: 10px 8px 10px #9F9F9F;
 }
+
 .navbar h1 {
   color: #f1356d;
+}
+
+.logo{
+  margin-left: 2%;
 }
 
 .navbar .logo img{
@@ -28,7 +32,6 @@
 .navbar .links1{
   font-size: medium;
   text-decoration: none;
-  margin-left: auto;
 } 
 
 .navbar .profile img{
@@ -43,6 +46,7 @@
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: #f1356d;
 }
