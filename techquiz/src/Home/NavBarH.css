@@ -12,7 +12,7 @@
 }
 
 .navbar h1 {
-  color: #f1356d;
+  color: #000000;
 }
 
 .navbar .logo img{
@@ -26,17 +26,10 @@
 
 .navbar .links1 {
   font-size: medium;
-  margin-left: 7%;
 }
 
-.navbar .links1{
-  font-size: medium;
-  text-decoration: none;
-  
-} 
-
-.links1 .profile{
-  margin-left: 10%;
+.profile{
+  margin-left: 1%;
 }
 
 .navbar .profile img{
@@ -46,32 +39,29 @@
   min-height: 40px;
 }
 
-.navbar a {
-  margin-left: 16px;
+.navbar .Separadores {
+  margin-left: 5%;
   text-decoration: none;
-  padding: 6px;
+  padding: 8px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #5bbdb6;
 }
 
-/* Textbox 389 */
 .textbox {
-  margin-left: 30%;
-  top: 16px;
-  opacity: 1; 
+  margin-left: auto;
 }
-
 
 .textbox input {
-  width: 100%; 
-  height: 36px; 
-  padding-left: 34px; 
+  right: auto;
+  width: 78%; 
+  height: 30px; 
+  padding-left: 16px; 
   padding-right: 12px; 
   font-family: Inter; /* Body */
   font-size: 14px; 
   background: #F3F4F6FF; /* neutral-200 */
-  border-radius: 4px; /* border-m */
+ /* border-m */
   border-width: 0px; 
   outline: none; 
 }
@@ -80,9 +70,9 @@
   top: 12px; 
   right: 12px; 
   width: 16px; 
-  height: 16px; 
   fill: #171A1FFF; /* neutral-900 */
 }
+
 .textbox svg.left {
   left: 12px; 
 }
@@ -104,4 +94,3 @@
 .textbox :disabled + .icon, .textbox :disabled + .icon + .icon {
   fill: #171A1FFF; /* neutral-900 */
 }
-

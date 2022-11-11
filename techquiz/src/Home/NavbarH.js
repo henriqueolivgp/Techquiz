@@ -1,4 +1,3 @@
-
 import '../Home/NavBarH.css'
 import User from './Img/user.png'
 import Logo from './Img/TechquizBlack.png'
@@ -10,10 +9,10 @@ const NavBarH = () => {
                 <img src={Logo}/>
             </div>   
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/create">Support</a>
-                <a href="/create">AboutUs</a>
-                <a href="/create">Sugestões</a>
+                <a className='Separadores' href="/">Home</a>
+                <a className='Separadores' href="/create">Support</a>
+                <a className='Separadores' href="/create">AboutUs</a>
+                <a className='Separadores' href="/create">Sugestões</a>
             </div>
             <div className='textbox'>
                 <input  type="text" placeholder="Search.."/>
@@ -28,4 +27,4 @@ const NavBarH = () => {
      );
 }
  
-export default NavBarH
+export default NavBarH;
