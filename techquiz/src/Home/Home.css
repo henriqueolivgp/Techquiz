@@ -29,3 +29,40 @@
     height: 100%;
 }
 
+.grid-container {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+}
+
+.grid-child{
+    text-align: center;
+    background-color: #F5F0FFFF;
+    height: 350px;
+}
+
+/* Image 1574 */
+.cb {
+    margin-top: 10%;
+    width: 150px; 
+    height: 150px;
+}
+
+.rc {
+    margin-top: 10%;
+    width: 150px; 
+    height: 150px;
+}
+
+.asi {
+    margin-top: 10%;
+    width: 150px; 
+    height: 150px;
+}
+
+.p {
+    margin-top: 10%;
+    width: 150px; 
+    height: 150px;
+}
