@@ -12,34 +12,34 @@ const HomePage = () => {
             <div class="flex-container">
 
                 <div class="flex-child">
-                    <img className='Logo' src={logo2}/>
+                    <img className='Logo' alt='logo container' src={logo2}/>
                     <p className='intro'>Com o Techquiz pode avaliar o  seu conhecimento e saber <br/>o seu nível em todas as diversas áreas de informática.</p>
                 </div>
   
                 <div class="flex-child">
-                    <img className='banner' src={img1}/>
+                    <img className='banner' alt='banner imag' src={img1}/>
                 </div>
             </div>
 
             <div class="grid-container">
 
             <div class="grid-child">
-                <img className='cb' src={cb}/>
+                <img className='cb' alt='conceitos basicos ' src={cb}/>
                 <p className='titulo'>Conceitos Básicos</p>
             </div>
 
             <div class="grid-child">
-                <img className='rc' src={rc}/>
+                <img className='rc' alt='redes de computadores' src={rc} />
                 <p className='titulo'>Redes de Computadoress</p>
             </div>
 
             <div class="grid-child">
-                <img className='asi' src={asi}/>
+                <img className='asi' alt='administracao de sistemas informaticos' src={asi}/>
                 <p className='titulo'>Administracao Sistemas<br/>Informaticos</p>
             </div>
 
             <div class="grid-child">
-                <img className='p' src={p}/>
+                <img className='p' alt='programacao' src={p}/>
                 <p className='titulo'>Programacao</p>
             </div>
   
