@@ -44,6 +44,29 @@ const HomePage = () => {
             </div>
   
             </div>
+            <div class="grid-container">
+
+            <div class="grid-child">
+                <img className='cb' alt='conceitos basicos ' src={cb}/>
+                <p className='titulo'>Conceitos Básicos</p>
+            </div>
+
+            <div class="grid-child">
+                <img className='rc' alt='redes de computadores' src={rc} />
+                <p className='titulo'>Redes de Computadoress</p>
+            </div>
+
+            <div class="grid-child">
+                <img className='asi' alt='administracao de sistemas informaticos' src={asi}/>
+                <p className='titulo'>Administracao Sistemas<br/>Informaticos</p>
+            </div>
+
+            <div class="grid-child">
+                <img className='p' alt='programacao' src={p}/>
+                <p className='titulo'>Programacao</p>
+            </div>
+  
+            </div>
         </div>
         
      );
