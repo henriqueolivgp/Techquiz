@@ -65,32 +65,3 @@
   border-width: 0px; 
   outline: none; 
 }
-.textbox svg {
-  position: absolute; 
-  top: 12px; 
-  right: 12px; 
-  width: 16px; 
-  fill: #171A1FFF; /* neutral-900 */
-}
-
-.textbox svg.left {
-  left: 12px; 
-}
-/* hover */
-.textbox input:hover {
-  color: #BDC1CAFF; /* neutral-400 */
-  background: #F3F4F6FF; /* neutral-200 */
-}
-/* focused */
-.textbox input:focused {
-  color: #BDC1CAFF; /* neutral-400 */
-  background: #FFFFFFFF; /* white */
-}
-/* disabled */
-.textbox input:disabled {
-  color: #BDC1CAFF; /* neutral-400 */
-  background: #F3F4F6FF; /* neutral-200 */
-}
-.textbox :disabled + .icon, .textbox :disabled + .icon + .icon {
-  fill: #171A1FFF; /* neutral-900 */
-}

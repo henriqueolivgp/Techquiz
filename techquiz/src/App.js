@@ -1,5 +1,6 @@
 import Home from './Home/HomePage';
 import './App';
+import Footer from './Home/Footer';
 import NavBarH from './Home/NavbarH';
 import RegisterPage from './Register/RegisterPage'
 import React from "react";
@@ -13,7 +14,8 @@ function App() {
         <Switch>
           <Route exact path="/">
             <NavBarH />
-            <Home /> 
+            <Home />
+            <Footer/>
           </Route>
           <Route path="/register">
             <RegisterPage />
