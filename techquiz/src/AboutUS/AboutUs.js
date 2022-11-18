@@ -1,11 +1,11 @@
 
 
-const Aboutus = () => {
+const AboutUs = () => {
     return ( 
         <div className="content">
-
+            <h2>UboutUs</h2>
         </div>
      );
 }
  
-export default Aboutus;
+export default AboutUs;
