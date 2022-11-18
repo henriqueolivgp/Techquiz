@@ -1,6 +1,7 @@
-import '../Home/NavBarH.css'
-import User from './Img/user.png'
-import Logo from './Img/TechquizBlack.png'
+import '../NavBar/NavBar.css'
+import User from './img/user.png'
+import Logo from './img/TechquizBlack.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -8,13 +9,13 @@ const NavBarH = () => {
     return ( 
         <nav className="navbar">
             <div className='logo'>
-                <img alt='' src={Logo}/>
+                <Link to="/"><img alt='' src={Logo}/></Link>
             </div>   
             <div className="links">
-                <a className='Separadores' href="/">Home</a>
-                <a className='Separadores' href="/suport">Support</a>
-                <a className='Separadores' href="/aboutus">AboutUs</a>
-                <a className='Separadores' href="/sugestoes">Sugestões</a>
+                <Link className='Separadores' to="/quizs">Quiz's</Link>
+                <Link className='Separadores' to="/support">Suporte</Link>
+                <Link className='Separadores' to="/aboutus">AboutUs</Link>
+                <Link className='Separadores' to="/sugestoes">Sugestões</Link>
             </div>
             <div className='textbox'>
             <input id="phone" type="tel" name="phone" placeholder='Search'/>
