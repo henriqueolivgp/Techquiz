@@ -7,7 +7,7 @@ const footer = () => {
             <div className='foot'>
                 <img className='logof' alt='' src={logo}/>
                 <h3>Subscribe to our newsletter</h3>
-                <input className='mails' type="email" placeholder='input your email'></input>
+              
             </div>
 
         </div>
