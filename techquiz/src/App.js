@@ -9,6 +9,7 @@ import RegisterPage from './Register/RegisterPage';
 import NavBar from './NavBar/Navbar';
 import AboutUs from './AboutUS/AboutUs'
 import Profile from './Profile/Profile';
+import Conceitos from './Conceitosbasicos/Conceitosbas'
 
 function App() {
   return (
@@ -49,6 +50,10 @@ function App() {
           <Route path="/profile">
             <NavBar />
             <Profile />
+          </Route>
+          <Route path="/conceitosbas">
+           <NavBar />
+           <Conceitos /> 
           </Route>
         </Switch>
       </div>

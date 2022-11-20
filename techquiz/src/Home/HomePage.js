@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import img1 from './Img/teste2.jpg'
 import rc from './Img/RedesComputadores.png'
 import logo2 from './Img/TechquizBlack.png'
@@ -24,7 +25,7 @@ const HomePage = () => {
             <div class="grid-container">
 
             <div class="grid-child">
-                <img className='cb' alt='conceitos basicos ' src={cb}/>
+                <Link to="/conceitosbas"><img className='cb' alt='conceitos basicos ' src={cb}/></Link>
                 <p className='titulo'>Conceitos Básicos</p>
             </div>
 

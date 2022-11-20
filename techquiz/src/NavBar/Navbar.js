@@ -24,7 +24,7 @@ const NavBarH = () => {
                 <a href="/login">Login</a>
             </div>
             <div className="profile">
-                <Link to="/profileb"><img alt='' src={User}/></Link>
+                <Link to="/profile"><img alt='' src={User}/></Link>
             </div>        
         </nav>
         
