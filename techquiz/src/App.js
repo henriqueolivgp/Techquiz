@@ -10,6 +10,10 @@ import NavBar from './NavBar/Navbar';
 import AboutUs from './AboutUS/AboutUs'
 import Profile from './Profile/Profile';
 import Conceitos from './Conceitosbasicos/Conceitosbas'
+import RDC from './RDC/RDC';
+import Programacao from './Programacao/Programacao'
+import './App.css'
+import ADSI from './ADSI/ADSI';
 
 function App() {
   return (
@@ -51,9 +55,21 @@ function App() {
             <NavBar />
             <Profile />
           </Route>
-          <Route path="/conceitosbas">
+          <Route path="/conceitos-basicos">
            <NavBar />
            <Conceitos /> 
+          </Route>
+          <Route path="/redes-de-computadores">
+            <NavBar/>
+            <RDC/>
+          </Route>
+          <Route path="/administracao-de-sistemas-informaticos">
+            <NavBar/>
+            <ADSI />
+          </Route>
+          <Route path="/programacao">
+            <NavBar/>
+            <Programacao/>
           </Route>
         </Switch>
       </div>

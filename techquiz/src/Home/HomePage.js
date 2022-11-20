@@ -25,22 +25,22 @@ const HomePage = () => {
             <div class="grid-container">
 
             <div class="grid-child">
-                <Link to="/conceitosbas"><img className='cb' alt='conceitos basicos ' src={cb}/></Link>
+                <Link to="/conceitos-basicos"><img className='cb' alt='conceitos basicos ' src={cb}/></Link>
                 <p className='titulo'>Conceitos Básicos</p>
             </div>
 
             <div class="grid-child">
-                <img className='rc' alt='redes de computadores' src={rc} />
+                <Link to="/redes-de-computadores"><img className='rc' alt='redes de computadores' src={rc} /></Link>
                 <p className='titulo'>Redes de Computadoress</p>
             </div>
 
             <div class="grid-child">
-                <img className='asi' alt='administracao de sistemas informaticos' src={asi}/>
+                <Link to="/administracao-de-sistemas-informaticos"><img className='asi' alt='administracao de sistemas informaticos' src={asi}/></Link>
                 <p className='titulo'>Administracao Sistemas<br/>Informaticos</p>
             </div>
 
             <div class="grid-child">
-                <img className='p' alt='programacao' src={p}/>
+                <Link to="/programacao"><img className='p' alt='programacao' src={p}/></Link>
                 <p className='titulo'>Programacao</p>
             </div>
   
