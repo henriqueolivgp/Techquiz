@@ -13,9 +13,9 @@ const NavBarH = () => {
             </div>   
             <div className="links">
                 <Link className='Separadores' to="/quizs">Quiz's</Link>
-                <Link className='Separadores' to="/support">Suporte</Link>
+                <Link className='Separadores' to="/support">Suport</Link>
                 <Link className='Separadores' to="/aboutus">AboutUs</Link>
-                <Link className='Separadores' to="/sugestoes">Sugestões</Link>
+                <Link className='Separadores' to="/sugestoes">Sugestions</Link>
             </div>
             <div className='textbox'>
             <input id="phone" type="tel" name="phone" placeholder='Search'/>

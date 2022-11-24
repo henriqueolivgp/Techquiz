@@ -1,6 +1,9 @@
 const Conceitosbas = () => {
     return ( 
-        <h2>Conceitos Basicos</h2>
+        <div className="content">
+            <h2>Conceitos Basicos</h2>
+            
+        </div>
      );
 }
  

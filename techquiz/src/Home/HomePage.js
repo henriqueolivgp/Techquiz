@@ -5,6 +5,7 @@ import logo2 from './Img/TechquizBlack.png'
 import cb from './Img/ConceitosBasicos.png'
 import asi from './Img/AdministracaoSistemasInformaticos.png'
 import p from './Img/Programacao.png'
+import pi from './Img/interrogacao.png'
 import './Home.css'
 
 const HomePage = () => {
@@ -48,23 +49,23 @@ const HomePage = () => {
             <div class="grid-container">
 
             <div class="grid-child">
-                <img className='cb' alt='conceitos basicos ' src={cb}/>
-                <p className='titulo'>Conceitos Básicos</p>
+                <img className='pi' alt='conceitos basicos ' src={pi}/>
+                <p className='titulo'>Coming Soon</p>
             </div>
 
             <div class="grid-child">
-                <img className='rc' alt='redes de computadores' src={rc} />
-                <p className='titulo'>Redes de Computadoress</p>
+                <img className='pi' alt='conceitos basicos ' src={pi}/>
+                <p className='titulo'>Coming Soon</p>
             </div>
 
             <div class="grid-child">
-                <img className='asi' alt='administracao de sistemas informaticos' src={asi}/>
-                <p className='titulo'>Administracao Sistemas<br/>Informaticos</p>
+                <img className='pi' alt='conceitos basicos ' src={pi}/>
+                <p className='titulo'>Coming Soon</p>
             </div>
 
             <div class="grid-child">
-                <img className='p' alt='programacao' src={p}/>
-                <p className='titulo'>Programacao</p>
+                <img className='pi' alt='conceitos basicos ' src={pi}/>
+                <p className='titulo'>Coming Soon</p>
             </div>
   
             </div>
