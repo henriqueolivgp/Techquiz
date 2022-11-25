@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Quizs from './Quiz\'s/Quizs';
 import Support from './Support/Support';
 import Home from './Home/HomePage';
-import Footer from './Home/Footer';
+import Footer from './Footer/Footer';
 import RegisterPage from './Register/RegisterPage';
 import NavBar from './NavBar/Navbar';
 import AboutUs from './AboutUS/AboutUs'
@@ -36,8 +36,10 @@ function App() {
           <Route path="/login">
             <NavBar />
           </Route>
-          <Route path="/conceitosbasicos">
+          <Route path="/conceitos-basicos">
             <NavBar />
+            <Conceitos />
+            <Footer />
           </Route>
           <Route path="/quizs">
             <NavBar/>
@@ -54,10 +56,6 @@ function App() {
           <Route path="/profile">
             <NavBar />
             <Profile />
-          </Route>
-          <Route path="/conceitos-basicos">
-           <NavBar />
-           <Conceitos /> 
           </Route>
           <Route path="/redes-de-computadores">
             <NavBar/>

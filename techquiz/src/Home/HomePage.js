@@ -32,7 +32,7 @@ const HomePage = () => {
 
             <div class="grid-child">
                 <Link to="/redes-de-computadores"><img className='rc' alt='redes de computadores' src={rc} /></Link>
-                <p className='titulo'>Redes de Computadoress</p>
+                <p className='titulo'>Redes de Computadores</p>
             </div>
 
             <div class="grid-child">
