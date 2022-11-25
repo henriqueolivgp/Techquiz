@@ -3,7 +3,7 @@ import './Footer.css'
 
 const footer = () => {
     return ( 
-        <div className="content">
+        <div className="content1">
             <div className='foot'>
                 <img className='logof' alt='' src={logo}/>
                 <h3>Subscribe to our newsletter</h3>
@@ -13,7 +13,10 @@ const footer = () => {
                 </div>
 
                 <div className='data'>
-                    <a>© 2022 Techquiz, Inc<a className='point'> . </a><a>Privacy</a><a className='point'> . </a><a>Terms</a><a className='point'> . </a></a>
+                    <a href="#/" className='txt'>© 2022 Techquiz, Inc<a href="#/"  className='point'> . </a>
+                    <a href="#/" className='txt'>Privacy</a><a href="#/" className='point'> . </a>
+                    <a href="#/" className='txt'>Terms</a><a href="#/" className='point'> . </a>
+                    </a>
                 </div>
                 
             </div>
