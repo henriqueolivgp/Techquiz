@@ -1,4 +1,5 @@
 import "./ConseitosBI.css"
+import CB from './img/CBI.jpg'
 
 const Conceitosbas = () => {
     return ( 
@@ -10,6 +11,10 @@ const Conceitosbas = () => {
             <div className="box">
                 <div className="desc">
                 <h1 className="tittle">Indice dos conceitos basicos de informatica</h1>
+                
+                <div class="lr-container">
+
+                    <div class="left">
                 <ul>
                     <li>Sistemas Operativos</li>
                     <li>CPU</li>
@@ -23,9 +28,13 @@ const Conceitosbas = () => {
                     <li>Placa-mãe</li>
                 </ul>
                 <button className="button">Comecar Agora</button>
+                    </div>
+  
+                    <div class="rigth">
+                        <img className="CB" alt="CBI" src={CB}></img>
+                    </div>
+  
                 </div>
-                <div className="imagemCB">
-
                 </div>
             </div>
         </div>
