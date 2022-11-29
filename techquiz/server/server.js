@@ -12,13 +12,13 @@ require('dotenv').config();
 //--ROUTES--//
 const router = Router();
 
-// GET nome method route
 //router.get("/user, (req, res) => {
-//  res.send(data.user);
-//});
-
-// POST new data method route
-router.post("/new_data", (req, res) => {
+  //  res.send(data.user);
+  // GET nome method route
+  //});
+  
+  // POST new data method route
+  router.post("/new_data", (req, res) => {
   const new_dataJSON = req.body;
   //   console.log(req.body);
   // const new_dataJSON = {
