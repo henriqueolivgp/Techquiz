@@ -2,7 +2,7 @@ h2{
     margin-top: 2%;
 }
 
-.content{
+.content-adsi{
     box-shadow: 0 0 35px #27282c;
     border-radius: 1rem;
     margin-top: 2%;
@@ -10,19 +10,19 @@ h2{
     height: 100%;
 }
 
-.fraseini{
+.fraseini-adsi{
     padding: 1%;
     text-align: center;
     height: 70px;
 }
 
-.frase{
+.frase-adsi{
     pointer-events: none;
     text-decoration: none;
     color: black;
 }
 
-.box {
+.box-adsi {
     margin-left: 0.5%;
     width: 99.4%; 
     height: 588px; 
@@ -30,7 +30,7 @@ h2{
     border-radius: 10px;
   }
 
-  .tittle{
+  .tittle-adsi{
     color: white;
     padding: 1.5%;
   }
@@ -41,7 +41,7 @@ h2{
     font-size: larger;
   }
 
-  .button {
+  .button-adsi {
     margin-left: 5%;
     padding: 0.75rem 1.5rem;
     line-height: 84px; 
@@ -50,29 +50,29 @@ h2{
     text-decoration: none;
   }
 
-  .button:hover{
+  .button-adsi:hover{
     border: 2px solid #1e9bff;
     color: #1e9bff;
     letter-spacing: 0.1rem;
     box-shadow: 0 0 35px #1e9bff;
   }
 
-  .button::before{
+  .button-adsi::before{
 
     inset: 2px;
     background: #27282c;
   }
 
-  .button span{
+  .button-adsi span{
     position: relative;
     z-index: 1;
   }
 
-  .button i{
+  .button-adsi i{
     position: relative;
   }
 
-  .button  i::before{
+  .button-adsi  i::before{
     content: "";
     position: absolute;
     top: -18px;
@@ -84,13 +84,13 @@ h2{
     transition: 0.5s;
   }
 
-  .button:hover i::before{
+  .button-adsi:hover i::before{
     left: 20%;
     width: 20px;
     transition: 0.5s;
   }
 
-  .button i::after{
+  .button-adsi i::after{
     content: "";
     position: absolute;
     bottom: -18px;
@@ -103,36 +103,34 @@ h2{
     transition: 0.5s;
   }
 
-  .button:hover i::after{
+  .button-adsi:hover i::after{
     transition: 0.5s;
     right: 80%;
     width: 20px;
   }
 
-.lr-container {
+.lr-container-adsi {
     margin-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1%;
 }
 
-.left{
+.left-adsi{
     width: 55%;
     float: left;
     padding: 20px;
 }
 
-.rigth{
+.rigth-adsi{
     width: 50%;
     margin-left: 25%;
     text-align: center;
 
 }  
 
-.CB {
+.adsi {
     border-radius: 2rem;
-    width: 450px; 
-    height: 450px;
     animation: flutuacao 4s ease-in-out infinite;
 }
 @keyframes flutuacao {

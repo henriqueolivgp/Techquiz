@@ -65,6 +65,7 @@ function App() {
           <Route path="/administracao-de-sistemas-informaticos">
             <NavBar/>
             <ADSI />
+            <Footer />
           </Route>
           <Route path="/programacao">
             <NavBar/>

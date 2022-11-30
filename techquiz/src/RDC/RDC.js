@@ -4,17 +4,17 @@ import './RDC.css'
 const RDC = () => {
     return ( 
         <div className="content">
-            <div className="fraseini1">
+            <div className="fraseini-rdc">
             <h2>Conceitos Basicos</h2>
-            <a href="#/" className="frase1">Faça agora o quiz de Conceiros Básicos da Informática, para saber o seu nível de conhecimentos relativos a Conceitos Básicos da Informática .</a>
+            <a href="#/" className="frase-rdc">Faça agora o quiz de Conceiros Básicos da Informática, para saber o seu nível de conhecimentos relativos a Conceitos Básicos da Informática .</a>
             </div>
-            <div className="box1">
-                <div className="desc1">
-                <h1 className="tittle1">Indice dos conceitos basicos de informatica</h1>
+            <div className="box-rdc">
+                <div className="desc-rdc">
+                <h1 className="tittle-rdc">Indice dos conceitos basicos de informatica</h1>
                 
-                <div class="lr-container1">
+                <div class="lr-container-rdc">
 
-                    <div class="left1">
+                    <div class="left-rdc">
                 <ul>
                     <li>Sistemas Operativos</li>
                     <li>CPU</li>
@@ -27,8 +27,8 @@ const RDC = () => {
                     <li>Periféricos</li>
                     <li>Placa-mãe</li>
                 </ul>
-                    <div className="container-button1">
-                        <a href="#/" className="button1" style={{color:"#1e9bff"}}><span>Comecar Agora</span><i></i></a>
+                    <div className="container-button-rdc">
+                        <a href="#/" className="button-rdc" style={{color:"#1e9bff"}}><span>Comecar Agora</span><i></i></a>
                     </div>
                     </div>
   

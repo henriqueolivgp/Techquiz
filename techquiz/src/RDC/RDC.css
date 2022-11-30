@@ -2,24 +2,29 @@ h2{
     margin-top: 2%;
 }
 
+
 .content{
+    box-shadow: 0 0 35px #27282c;
     width: 100%;
     height: 100%;
 }
 
-.fraseini1{
+.fraseini-rdc{
     text-align: center;
-    box-shadow: 10px 8px 10px #cac9c9;
     height: 70px;
 }
 
-.frase1{
+.fraseini-rdc h2{
+  padding: 1%;
+}
+
+.frase-rdc{
     pointer-events: none;
     text-decoration: none;
     color: black;
 }
 
-.box1 {
+.box-rdc {
     margin-left: 0.5%;
     width: 99.4%; 
     height: 588px; 
@@ -27,7 +32,7 @@ h2{
     border-radius: 10px;
   }
 
-  .tittle1{
+  .tittle-rdc{
     color: white;
     padding: 1.5%;
   }
@@ -38,7 +43,7 @@ h2{
     font-size: larger;
   }
 
-  .button1 {
+  .button-rdc {
     margin-left: 5%;
     padding: 0.75rem 1.5rem;
     line-height: 84px; 
@@ -47,29 +52,29 @@ h2{
     text-decoration: none;
   }
 
-  .button1:hover{
+  .button-rdc:hover{
     border: 2px solid #1e9bff;
     color: #1e9bff;
     letter-spacing: 0.1rem;
     box-shadow: 0 0 35px #1e9bff;;
   }
 
-  .button1::before{
+  .button-rdc::before{
     content: "";
     inset: 2px;
     background: #27282c;
   }
 
-  .button1 span{
+  .button-rdc span{
     position: relative;
     z-index: 1;
   }
 
-  .button1 i{
+  .button-rdc i{
     position: relative;
   }
 
-  .button1 i::before{
+  .button-rdc i::before{
     content: "";
     position: absolute;
     top: -18px;
@@ -82,13 +87,13 @@ h2{
     transition: all 0.2s ease-in;
   }
 
-  .button1:hover i::before{
+  .button-rdc:hover i::before{
     transition: all 0.2s ease-in;
     left: 80%;
     width: 20px;
   }
 
-  .button1 i::after{
+  .button-rdc i::after{
     content: "";
     position: absolute;
     bottom: -18px;
@@ -101,26 +106,26 @@ h2{
     transition: 0.5s;
   }
 
-  .button1:hover i::after{
+  .button-rdc:hover i::after{
     transition: 0.5s;
     right: 80%;
     width: 20px;
   }
 
-.lr-container1 {
+.lr-container-rdc {
     margin-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1%;
 }
 
-.left1{
+.left-rdc{
     width: 55%;
     float: left;
     padding: 20px;
 }
 
-.rigth1{
+.rigth-rdc{
     width: 50%;
     margin-left: 25%;
     text-align: center;
