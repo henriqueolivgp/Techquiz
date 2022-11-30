@@ -2,30 +2,27 @@ h2{
     margin-top: 2%;
 }
 
-
-.content-rdc{
-    margin-top: 2%;
+.content-prog{
     box-shadow: 0 0 35px #27282c;
+    border-radius: 1rem;
+    margin-top: 2%;
     width: 100%;
     height: 100%;
 }
 
-.fraseini-rdc{
+.fraseini-prog{
+    padding: 1%;
     text-align: center;
     height: 70px;
 }
 
-.fraseini-rdc h2{
-  padding: 1%;
-}
-
-.frase-rdc{
+.frase-prog{
     pointer-events: none;
     text-decoration: none;
     color: black;
 }
 
-.box-rdc {
+.box-prog {
     margin-left: 0.5%;
     width: 99.4%; 
     height: 588px; 
@@ -33,7 +30,7 @@ h2{
     border-radius: 10px;
   }
 
-  .tittle-rdc{
+  .tittle-prog{
     color: white;
     padding: 1.5%;
   }
@@ -44,7 +41,7 @@ h2{
     font-size: larger;
   }
 
-  .button-rdc {
+  .button-prog {
     margin-left: 5%;
     padding: 0.75rem 1.5rem;
     line-height: 84px; 
@@ -53,48 +50,47 @@ h2{
     text-decoration: none;
   }
 
-  .button-rdc:hover{
+  .button-prog:hover{
     border: 2px solid #1e9bff;
     color: #1e9bff;
     letter-spacing: 0.1rem;
-    box-shadow: 0 0 35px #1e9bff;;
+    box-shadow: 0 0 35px #1e9bff;
   }
 
-  .button-rdc::before{
-    content: "";
+  .button-prog::before{
+
     inset: 2px;
     background: #27282c;
   }
 
-  .button-rdc span{
+  .button-prog span{
     position: relative;
     z-index: 1;
   }
 
-  .button-rdc i{
+  .button-prog i{
     position: relative;
   }
 
-  .button-rdc i::before{
+  .button-prog  i::before{
     content: "";
     position: absolute;
     top: -18px;
-    left: 2px;
     width: 10px;
     height: 5px;
     border: 2px solid ;
     background: #27282c;
     transform: translateX(-50%);
-    transition: all 0.2s ease-in;
+    transition: 0.5s;
   }
 
-  .button-rdc:hover i::before{
-    transition: all 0.2s ease-in;
-    left: 80%;
+  .button-prog:hover i::before{
+    left: 20%;
     width: 20px;
+    transition: 0.5s;
   }
 
-  .button-rdc i::after{
+  .button-prog i::after{
     content: "";
     position: absolute;
     bottom: -18px;
@@ -107,44 +103,42 @@ h2{
     transition: 0.5s;
   }
 
-  .button-rdc:hover i::after{
+  .button-prog:hover i::after{
     transition: 0.5s;
     right: 80%;
     width: 20px;
   }
 
-.lr-container-rdc {
+.lr-container-prog {
     margin-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1%;
 }
 
-.left-rdc{
+.left-prog{
     width: 55%;
     float: left;
     padding: 20px;
 }
 
-.rigth-rdc{
+.rigth-prog{
     width: 50%;
     margin-left: 25%;
     text-align: center;
 
 }  
 
-.rdc {
-    margin-top: 15%;
-    margin-left: -54%;
+.-prog {
     border-radius: 2rem;
-    animation: flutuacao 4s ease-in-out infinite;
+    animation: flutuacao 5s ease-in-out infinite;
 }
 @keyframes flutuacao {
   0%, 100%{
-    transform: translateY(4px);
+    transform: translateY(30px);
   }
   50%{
-    transform: translateY(-45px);
+    transform: translateY(-70px);
   }
 }
 
