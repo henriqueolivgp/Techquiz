@@ -1,5 +1,5 @@
 import "./ConseitosBI.css"
-import CB from './img/CBI.jpg'
+import rdc from './img/INFORMÁTICA-BÁSICA-NÍVEL-I.jpg'
 
 const Conceitosbas = () => {
     return ( 
@@ -33,7 +33,7 @@ const Conceitosbas = () => {
                     </div>
   
                     <div class="rigth">
-                        <img className="CB" alt="CBI" src={CB}></img>
+                        <img className="CB" alt="CBI" src={rdc}></img>
                     </div>
   
                 </div>

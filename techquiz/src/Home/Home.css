@@ -2,6 +2,11 @@
     font-family: Origin Tech Demo;
 }
 
+.container{
+    border-radius: 1rem;
+    box-shadow: 0 0 35px #27282c;
+}
+
 .flex-container {
     display: flex;
     margin-top: 1%;
@@ -19,11 +24,14 @@
 }
 
 .flex-child {
+    border-radius: 1rem;
+    color: white;
     flex: 1;
-    background-color: #F5F0FFFF;
+    background-color: #27282c;
 }  
 
 .banner{
+    border-radius: 1rem;
     margin-left: -10%;
     width: 110%;
     height: 100%;
@@ -37,6 +45,7 @@
 }
 
 .grid-child{
+    
     text-align: center;
     height: 350px;
 }
@@ -46,25 +55,61 @@
     margin-top: 18%;
     width: 150px; 
     height: 150px;
+    animation: flutuacaocb 4s ease-in-out infinite;
 }
+@keyframes flutuacaocb {
+    0%, 100%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+  }
 
 .rc {
     margin-top: 18%;
     width: 150px; 
     height: 150px;
+    animation: flutuacaordc 4s ease-in-out infinite;
 }
+@keyframes flutuacaordc {
+    0%, 100%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+  }
 
 .asi {
     margin-top: 18%;
     width: 150px; 
     height: 150px;
+    animation: flutuacaoadsi 4s ease-in-out infinite;
 }
+@keyframes flutuacaoadsi {
+    0%, 100%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+  }
 
 .p {
     margin-top: 18%;
     width: 150px; 
     height: 150px;
+    animation: flutuacaoap 4s ease-in-out infinite;
 }
+@keyframes flutuacaoap {
+    0%, 100%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+  }
 
 .pi{
     margin-top: 18%;

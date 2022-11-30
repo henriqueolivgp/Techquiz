@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import img1 from './Img/teste2.jpg'
 import rc from './Img/RedesComputadores.png'
-import logo2 from './Img/TechquizBlack.png'
+import logo2 from './Img/TechquizWhite.png'
 import cb from './Img/ConceitosBasicos.png'
 import asi from './Img/AdministracaoSistemasInformaticos.png'
 import p from './Img/Programacao.png'

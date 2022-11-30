@@ -60,6 +60,7 @@ function App() {
           <Route path="/redes-de-computadores">
             <NavBar/>
             <RDC/>
+            <Footer />
           </Route>
           <Route path="/administracao-de-sistemas-informaticos">
             <NavBar/>

@@ -2,25 +2,24 @@ h2{
     margin-top: 2%;
 }
 
-.content1{
-    margin-top: 4%;
+.content{
     width: 100%;
     height: 100%;
 }
 
-.fraseini{
+.fraseini1{
     text-align: center;
     box-shadow: 10px 8px 10px #cac9c9;
     height: 70px;
 }
 
-.frase{
+.frase1{
     pointer-events: none;
     text-decoration: none;
     color: black;
 }
 
-.box {
+.box1 {
     margin-left: 0.5%;
     width: 99.4%; 
     height: 588px; 
@@ -28,7 +27,7 @@ h2{
     border-radius: 10px;
   }
 
-  .tittle{
+  .tittle1{
     color: white;
     padding: 1.5%;
   }
@@ -39,7 +38,7 @@ h2{
     font-size: larger;
   }
 
-  .button {
+  .button1 {
     margin-left: 5%;
     padding: 0.75rem 1.5rem;
     line-height: 84px; 
@@ -48,47 +47,48 @@ h2{
     text-decoration: none;
   }
 
-  .button:hover{
+  .button1:hover{
     border: 2px solid #1e9bff;
     color: #1e9bff;
     letter-spacing: 0.1rem;
-    box-shadow: 0 0 35px #1e9bff;
+    box-shadow: 0 0 35px #1e9bff;;
   }
 
-  .button::before{
-
+  .button1::before{
+    content: "";
     inset: 2px;
     background: #27282c;
   }
 
-  .button span{
+  .button1 span{
     position: relative;
     z-index: 1;
   }
 
-  .button i{
+  .button1 i{
     position: relative;
   }
 
-  .button  i::before{
+  .button1 i::before{
     content: "";
     position: absolute;
     top: -18px;
+    left: 2px;
     width: 10px;
     height: 5px;
     border: 2px solid ;
     background: #27282c;
     transform: translateX(-50%);
-    transition: 0.5s;
+    transition: all 0.2s ease-in;
   }
 
-  .button:hover i::before{
-    left: 20%;
+  .button1:hover i::before{
+    transition: all 0.2s ease-in;
+    left: 80%;
     width: 20px;
-    transition: 0.5s;
   }
 
-  .button i::after{
+  .button1 i::after{
     content: "";
     position: absolute;
     bottom: -18px;
@@ -101,36 +101,36 @@ h2{
     transition: 0.5s;
   }
 
-  .button:hover i::after{
+  .button1:hover i::after{
     transition: 0.5s;
     right: 80%;
     width: 20px;
   }
 
-.lr-container {
+.lr-container1 {
     margin-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1%;
 }
 
-.left{
+.left1{
     width: 55%;
     float: left;
     padding: 20px;
 }
 
-.rigth{
+.rigth1{
     width: 50%;
     margin-left: 25%;
     text-align: center;
 
 }  
 
-.CB {
+.rdc {
+    margin-top: 15%;
+    margin-left: -54%;
     border-radius: 2rem;
-    width: 450px; 
-    height: 450px;
     animation: flutuacao 4s ease-in-out infinite;
 }
 @keyframes flutuacao {
