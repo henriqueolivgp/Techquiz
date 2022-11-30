@@ -24,34 +24,96 @@ h2{
     margin-left: 0.5%;
     width: 99.4%; 
     height: 588px; 
-    background: rgb(255, 255, 255); /* neutral-300 */
+    background: #27282c; /* neutral-300 */
     border-radius: 10px;
   }
 
   .tittle{
+    color: white;
     padding: 1.5%;
   }
 
   li {
+    color: white;
     margin-top: 4%;
     font-size: larger;
   }
 
+  .container-button{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+  }
+
   .button {
-    left: 47px; 
-    width: 310px; 
-    height: 80px; 
-    padding: 0 20px; 
-    align-items: center; 
-    justify-content: center; 
-    font-family: Inter; /* Body */
-    font-size: 18px; 
-    line-height: 28px; 
-    color: #FFFFFFFF; /* white */
-    background: #4069E5FF; /* tertiary1-500 */
-    opacity: 1; 
-    border: none; 
-    border-radius: 4px; /* border-m */
+    margin-left: 5%;
+    padding: 0.75rem 1.5rem;
+    line-height: 84px; 
+    background: #444; /* tertiary1-500 */
+    transition: 0.2s;
+    text-decoration: none;
+  }
+
+  .button:hover{
+    border: 2px solid #1e9bff;
+    color: #1e9bff;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0 35px #1e9bff;;
+  }
+
+  .button::before{
+    content: "";
+    inset: 2px;
+    background: #27282c;
+  }
+
+  .button span{
+    position: relative;
+    inset: 0;
+  }
+
+  .button i{
+    position: relative;
+    inset: 0;
+  }
+
+  .button i::before{
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 2px;
+    width: 10px;
+    height: 5px;
+    border: 2px solid ;
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+
+  .button:hover i::before{
+    transition: 0.5s;
+    left: 80%;
+    width: 20px;
+  }
+
+  .button i::after{
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    right: 130px;
+    width: 10px;
+    height: 5px;
+    border: 2px solid ;
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+
+  .button:hover i::after{
+    transition: 0.5s;
+    right: 80%;
+    width: 20px;
   }
 
 .lr-container {
@@ -75,7 +137,7 @@ h2{
 }  
 
 .CB {
-    margin-top: 1%;
+    border-radius: 2rem;
     width: 450px; 
     height: 450px;
 }

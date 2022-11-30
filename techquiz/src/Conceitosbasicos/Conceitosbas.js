@@ -27,7 +27,9 @@ const Conceitosbas = () => {
                     <li>Periféricos</li>
                     <li>Placa-mãe</li>
                 </ul>
-                <button className="button">Comecar Agora</button>
+                    <div className="container-button">
+                        <a href="#/" className="button" style={{color:"#1e9bff"}}><span>Comecar Agora</span><i></i></a>
+                    </div>
                     </div>
   
                     <div class="rigth">
