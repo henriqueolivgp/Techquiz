@@ -3,6 +3,7 @@
 }
 
 .navbar {
+  border-radius: 0.5rem;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -54,6 +55,7 @@
 }
 
 .textbox input {
+  border-radius: 1rem;
   right: auto;
   width: 78%; 
   height: 30px; 
