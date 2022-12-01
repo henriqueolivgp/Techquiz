@@ -2,6 +2,7 @@
   font-family: Origin Tech Demo;
 }
 
+/* This is a style of navbar */
 .navbar {
   border-radius: 0.5rem;
   padding: 8px;
@@ -49,6 +50,10 @@
   color: #000000;
   color: #5bbdb6;
 }
+
+/* Ended the style of navbar */
+
+/* Start's style of the search input */
 
 .textbox {
   margin-left: auto;
