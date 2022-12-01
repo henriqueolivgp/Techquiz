@@ -11,11 +11,14 @@ import './Home.css'
 const HomePage = () => {
     return ( 
         <div className='container'>
+
+            {/*  */}
             <div class="flex-container">
 
                 <div class="flex-child">
                     <img className='Logo' alt='logo container' src={logo2}/>
-                    <p className='intro'>Com o Techquiz pode avaliar o  seu conhecimento e saber <br/>o seu nível em todas as diversas áreas de informática.</p>
+                    <p className='intro'>Com o Techquiz pode avaliar o  seu conhecimento e saber </p>
+                    <p className='intro'>o seu nível em todas as diversas áreas de informática.</p>
                 </div>
   
                 <div class="flex-child">
