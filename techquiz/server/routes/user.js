@@ -1,10 +1,11 @@
-const userModel = require("express").Router();
+const userRouter = require("express").Router();
 const controller = require("../controller/user");
+//const verifyToken = require('../utils/jwt.js').verifyToken;
 
-userModel.get("/", controller.getAll);
-userModel.get("/:id", controller.getById);
-userModel.post("/create", controller.create);
-userModel.put("/update", controller.update);
-userModel.delete("/delete", controller.delete);
+userRouter.get("/", controller.getAll);
+userRouter.get("/:id", controller.getById);
+userRouter.post("/create", controller.create);
+userRouter.put("/update", controller.update);
+userRouter.delete("/delete", controller.delete);
 
-module.exports = userModel;
+module.exports = userRouter;

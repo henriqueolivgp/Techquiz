@@ -1,11 +1,7 @@
 const Sequelize = require("sequelize");
-const database = require("../context/databasa");
+const database = require("../context/database");
 
-const userModel = database.define("anotadores", {
-  id_utilizador: {
-    type: Sequelize.STRING,
-    allowNull: true,
-  },
+const userModel = database.define("utilizador", {
   nome: {
     type: Sequelize.STRING,
     allowNull: true,
@@ -15,8 +11,8 @@ const userModel = database.define("anotadores", {
     allowNull: true,
   },
   password: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
+    type: Sequelize.STRING,
+    allowNull: true,
   },
 });
 
