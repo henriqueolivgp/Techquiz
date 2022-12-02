@@ -2,15 +2,15 @@ const Sequelize = require("sequelize");
 const database = require("../context/databasa");
 
 const registModel = database.define("anotadores", {
-  email_U: {
+  id: {
     type: Sequelize.STRING,
     allowNull: true,
   },
-  nome_U: {
+  nome: {
     type: Sequelize.STRING,
     allowNull: true,
   },
-  pass: {
+  password: {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
