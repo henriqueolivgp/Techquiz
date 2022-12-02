@@ -25,12 +25,12 @@ const NavBarH = () => {
 
             {/* search box */}
             <div className='textbox'>
-            <input id="phone" type="tel" name="phone" placeholder='Search'/>+
+            <input id="phone" type="tel" name="phone" placeholder='Search'/>    
             </div>
 
             {/* Links1 */}
             <div className="links1">
-                <a href="/login">Login</a>
+                <a href="/register">Register</a>
             </div>
 
             {/* Profile */}

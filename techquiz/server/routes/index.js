@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const registModel = require("./regist");
+const registModel = require("./user");
 
-router.use("/regist", registModel);
+router.use("/register", registModel);
 
 module.exports = router;
 

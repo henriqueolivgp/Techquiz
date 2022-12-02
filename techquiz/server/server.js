@@ -37,7 +37,7 @@ const app = express();
 // Live Server CORS options
 // aqui é o link do site a correr com o live server
 const corsOptions = {
-  origin: "http://127.0.0.1:3000",
+  origin: "http://localhost:5500",
 };
 
 app.get('/', (req, res) =>{
@@ -67,7 +67,7 @@ app.use((req, res) =>{
 // em conjunto com um link para abrir o server com os dados do .env
 app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
   console.log(
-    "Server up and running at http://%s:%s",
+    "Server up and running at http://%s:%s/api",
     process.env.SERVER_HOST,
     process.env.SERVER_PORT,
   );

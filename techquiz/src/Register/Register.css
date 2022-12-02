@@ -1,0 +1,18 @@
+.page {
+    position: absolute; 
+    top: -832px; 
+    left: -8448px; 
+    width: 1920px; 
+    height: 2037px; 
+    background: #FFFFFFFF; /* white */
+  }
+
+  .container {
+    position: absolute; 
+    top: 860px; 
+    left: 665px; 
+    width: 1378px; 
+    height: 662px; 
+    background: #FFFFFFFF; /* white */
+    border-radius: 8px; /* border-xl */
+  }

@@ -21,52 +21,65 @@ function App() {
     <div className="App">
       <div className='content'>
         <Switch>
+          {/* Home */}
           <Route exact path="/">
             <NavBar />
             <Home />
             <Footer/>
           </Route>
+          {/* Register */}
           <Route path="/register">
             <NavBar />
             <RegisterPage />
+            <Footer />
           </Route>
+          {/* Esquecime */}
           <Route path="/esquecime">
             <NavBar />
           </Route>
+          {/* Login */}
           <Route path="/login">
             <NavBar />
           </Route>
+          {/* Conceitos Basicos */}
           <Route path="/conceitos-basicos">
             <NavBar />
             <Conceitos />
             <Footer />
           </Route>
+          {/* Quiz's */}
           <Route path="/quizs">
             <NavBar/>
             <Quizs />
           </Route>
+          {/* Support */}
           <Route path="/support">
             <NavBar />
             <Support />
           </Route>
+          {/*AboutUs */}
           <Route path="/aboutus">
             <NavBar />
             <AboutUs />
           </Route>
+          {/* Profile */}
           <Route path="/profile">
             <NavBar />
             <Profile />
           </Route>
+          {/* Redes de Computadores */}
           <Route path="/redes-de-computadores">
             <NavBar/>
             <RDC/>
             <Footer />
           </Route>
+          {/* Administracao de Sistemas Operativos */}
           <Route path="/administracao-de-sistemas-informaticos">
             <NavBar/>
             <ADSI />
             <Footer />
           </Route>
+          {/* Programacao */}
           <Route path="/programacao">
             <NavBar/>
             <Programacao/>

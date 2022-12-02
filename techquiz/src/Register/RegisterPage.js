@@ -2,9 +2,9 @@ const RegisterPage = () => {
     return ( 
         <div className="Page">
             <div className="content">
-                <tittle>
-                    ola
-                </tittle>
+                <h2>
+                    Create an Account
+                </h2>
 
             </div>
         </div>
