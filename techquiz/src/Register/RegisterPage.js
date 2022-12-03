@@ -1,8 +1,10 @@
 import logoL from './img/TechquizBlack.png'
 import './Register.css'
 import { useHistory } from 'react-router-dom';
+import {useState} from 'react';
 
 const RegisterPage = () => {
+    const [nome, setnome] = useState('');
 
     const history = useHistory();
 
