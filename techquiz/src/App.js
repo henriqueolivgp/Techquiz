@@ -14,6 +14,9 @@ import RDC from './RDC/RDC';
 import Programacao from './Programacao/Programacao'
 import './App.css'
 import ADSI from './ADSI/ADSI';
+import LoginPage from './Login/LoginPage';
+import NavbarR from './Register/NavBarR';
+import NavBarL from './Login/NavbarL';
 
 function App() {
   return (
@@ -29,7 +32,7 @@ function App() {
           </Route>
           {/* Register */}
           <Route path="/register">
-            <NavBar />
+            <NavbarR />
             <RegisterPage />
             <Footer />
           </Route>
@@ -39,7 +42,8 @@ function App() {
           </Route>
           {/* Login */}
           <Route path="/login">
-            <NavBar />
+            <NavBarL />
+            <LoginPage />
           </Route>
           {/* Conceitos Basicos */}
           <Route path="/conceitos-basicos">

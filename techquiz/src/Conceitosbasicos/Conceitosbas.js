@@ -3,7 +3,7 @@ import rdc from './img/INFORMÁTICA-BÁSICA-NÍVEL-I.jpg'
 
 const Conceitosbas = () => {
     return ( 
-        <div className="content">
+        <div className="content-CB">
             <div className="fraseini">
             <h2>Conceitos Basicos</h2>
             <a href="#/" className="frase">Faça agora o quiz de Conceiros Básicos da Informática, para saber o seu nível de conhecimentos relativos a Conceitos Básicos da Informática .</a>

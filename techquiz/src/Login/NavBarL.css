@@ -2,8 +2,8 @@
   font-family: Origin Tech Demo;
 }
 
-.navbar-R {
-  border-radius: 1rem;
+.navbar-L {
+    border-radius: 1rem;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -12,43 +12,43 @@
   box-shadow: 10px 8px 10px #9F9F9F;
 }
 
-.navbar-R h1 {
+.navbar-L h1 {
   color: #f1356d;
 }
 
-.logo-R{
-  margin-left: 2%;
+.logo-L{
+  margin-left: 1%;
 }
 
-.navbar-R .logo-R img{
+.navbar-L .logo-L img{
   max-width: 188px;
   max-height: 35px;
 }
 
-.navbar-R .links-R {
+.navbar-L .links-L {
   font-size: medium;
-  margin-left: 4%;
+  margin-left: 1%;
 }
 
-.navbar-R .links1-R{
+.navbar-L .links1-L{
   font-size: medium;
   text-decoration: none;
 } 
 
-.navbar-R .profile-R img{
+.navbar-L .profile-L img{
   max-width: 40px;
   min-width: 40px;
   max-height: 40px;
   min-height: 40px;
 }
 
-.navbar-R a {
+.navbar-L a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
 
-.navbar-R a:hover {
+.navbar-L a:hover {
   color: #f1356d;
 }
 
