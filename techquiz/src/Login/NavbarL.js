@@ -1,27 +1,23 @@
 
 import './NavBarL.css'
-import UserL from './img/user.png'
+//import UserL from './img/user.png'
 import Logo from './img/TechquizBlack.png'
+import { Link } from 'react-router-dom'
 
 const NavBarL = () => {
     return ( 
         <nav className="navbar-L">
             <div className='logo-L'>
-                <img src={Logo}/>
+                <Link to="/"><img alt="" src={Logo}/></Link>
             </div>
                 
             <div className="links-L">
-                <a href="/">Home</a>
-                <a href="/create">Support</a>
-                <a href="/create">AboutUs</a>
-                <a href="/create">Sugestões</a>
+                <Link to="/">Home</Link>
+                <Link to="/support">Support</Link>
+                <Link to="/aboutus">AboutUs</Link>
+                <Link to="/sugestoes">Sugestões</Link>
             </div>
-            <div className="links1-L">
-                <a href="/login">Login</a>
-            </div>
-            <div className="profile-L">
-                <img src={UserL}/>
-            </div>        
+   
         </nav>
      );
 }

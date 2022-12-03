@@ -30,7 +30,8 @@
   margin-left: 1%;
 }
 
-.navbar-L .links1-L{
+.navbar-L .profile-L{
+  margin-left: auto;
   font-size: medium;
   text-decoration: none;
 } 

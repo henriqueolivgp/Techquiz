@@ -27,10 +27,11 @@
 
 .navbar-R .links-R {
   font-size: medium;
-  margin-left: 4%;
+  margin-left: 1%;
 }
 
 .navbar-R .links1-R{
+  margin-left: auto;
   font-size: medium;
   text-decoration: none;
 } 
