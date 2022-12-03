@@ -1,5 +1,5 @@
-import '../NavBar/NavBar.css'
-//import User from './img/user.png'
+import '../NavBar/NavBarLog.css'
+import User from './img/user.png'
 import Logo from './img/TechquizBlack.png'
 import { Link } from 'react-router-dom'
 
@@ -28,15 +28,10 @@ const NavBarH = () => {
             <input id="phone" type="tel" name="phone" placeholder='Search'/>    
             </div>
 
-            {/* Links1 */}
-            <div className="links1">
-                <a href="/register">Register</a>
-            </div>
-
             {/* Profile */}
-          {/*   <div className="profile">
+            <div className="profile">
                 <Link to="/profile"><img alt='' src={User}/></Link>
-            </div>        */}
+            </div>        
 
         </nav>
         
