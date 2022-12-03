@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
-const userRouter = require("./user");
-router.use("/user", userRouter);
+const UtilizadoreRouter = require("./Utilizadores");
+router.use("/register", UtilizadoreRouter);
 
 router.get('/', (req, res) => {
 	res.send('welcome /api!');

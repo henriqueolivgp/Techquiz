@@ -1,12 +1,12 @@
 const apiResponse = require("../utils/apiResponse.js");
-const userModel = require("../data/models/user");
+const UtilizadoreModel = require("../data/models/Utilizadores");
 const createToken = require("../utils/jwt.js").createToken;
 
 exports.getAll = async (req, res) => {
-  const users = await userModel.findAll();
+  const utilizadores = await UtilizadoreModel.findAll();
 
   const response = apiResponse.prepareResponse(
-    users.map(({ dataValues: { password, ...e } }) => e) // se retirar password, o postman vai mostrar a password
+    utilizadores.map(({ dataValues: { password, ...e } }) => e) // se retirar password, o postman vai mostrar a password
   );
   return apiResponse.send(res, response);
 };
@@ -14,48 +14,48 @@ exports.getAll = async (req, res) => {
 exports.getById = async (req, res) => {
   const id = req.params.idbatata;
 
-  const user = await userModel.findByPk(id);
-  delete user.password;
+  const utilizador = await UtilizadoreModel.findByPk(id);
+  delete utilizador.password;
 
-  const response = apiResponse.prepareResponse(user);
+  const response = apiResponse.prepareResponse(utilizador);
   return apiResponse.send(res, response);
 };
 
 exports.create = async (req, res) => {
   const { id, nome, password, email } = req.body;
 
-  const user = await userModel.create({ id, nome, password, email });
+  const utilizador = await UtilizadoreModel.create({ id, nome, password, email });
 
-  const response = apiResponse.prepareResponse(user);
+  const response = apiResponse.prepareResponse(utilizador);
   return apiResponse.send(res, response);
 };
 
 exports.update = async (req, res) => {
-  const { id, nome, password, email } = req.body;
+  const { id_utilizador, nome, password, email } = req.body;
 
-  const user = await userModel.findByPk(id);
+  const utilizador = await UtilizadoreModel.findByPk(id_utilizador);
 
-  user.nome = nome;
-  user.password = password;
-  user.email = email;
+  utilizador.nome = nome;
+  utilizador.password = password;
+  utilizador.email = email;
 
-  await user.save();
+  await utilizador.save();
 
-  const response = apiResponse.prepareResponse(user);
+  const response = apiResponse.prepareResponse(utilizador);
   return apiResponse.send(res, response);
 };
 
 exports.delete = async (req, res) => {
   const id = req.body.id;
 
-  await userModel.destroy({
+  await UtilizadoreModel.destroy({
     where: {
-      id: id,
+      id_utilizador: id_utilizador,
     },
   });
 
   const response = apiResponse.prepareResponse(
-    "User with ID " + id + " deleted"
+    "utilizador with ID " + id + " deleted"
   );
   return apiResponse.send(res, response);
 };
@@ -70,7 +70,7 @@ exports.login = async (req, res) => {
 
   if (!nome || nome.length < 4) {
     return res.status(500).json({
-      message: "Username não pode estar vazio",
+      message: "Nome não pode estar vazio",
     });
   }
 
@@ -81,22 +81,22 @@ exports.login = async (req, res) => {
   }
 
   //SELECT * FROM users WHERE 'username'='xberion2' AND 'password'='querty'
-  const listOfUsers = await userModel.findAll({
+  const listOfutilizadores = await UtilizadoreModel.findAll({
     where: {
       nome: nome,
       password: password,
     },
   });
 
-  const user = listOfUsers[0];
+  const utilizador = listOfutilizadores[0];
 
-  if (!user) {
+  if (!utilizador) {
     return res.status(500).json({
       message: "CREDENCIAIS ERRADAS",
     });
   }
 
-  const token = createToken({ data: { id: user.id, username: user.username } });
+  const token = createToken({ data: { id_utilizador: utilizador.id_utilizador, nome: utilizador.nome } });
   console.log(token);
   return res.status(200).json({
     message: "LOGIN FEITO",
