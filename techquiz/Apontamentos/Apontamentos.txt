@@ -1,0 +1,45 @@
+O que esta feito:
+
+        Front-End:
+                - Home Page 
+                - Register Page
+                - Login Page
+                - Conceitos Basicos Page
+                - Redes de computadores Page
+                - Administracao de Sistemas Page
+                - Programacao Page
+                - Todas as Ligacoes entre paginas e a navbar
+                - Footer
+
+        Back-End:
+                - .env
+                - API
+                - Server Localhost
+                - Utils:
+                        - jwt 
+                        - apiresponse
+                - Routes:
+                        - index
+                        - Utilizadores
+                - Data:
+                    - context:
+                            - database
+                    - models:
+                            - Utilizadores
+                - controller:
+                            - Utilizadores
+
+O que falta faZer:
+
+            - Back-End:
+                    - Criacao das tabelas da base de dados
+                    - Ligacao do Front-End ao Back-End
+
+            - Scripts:
+                    - Calculos de pontos e apresentacao do total deles 
+
+            - Front-End:
+                    - Quiz's Page
+                    - Support Page
+                    - Profile Page
+                    - Categoria Page
