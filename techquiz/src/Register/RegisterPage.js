@@ -1,10 +1,8 @@
 import logoL from './img/TechquizBlack.png'
 import './Register.css'
 import { useHistory } from 'react-router-dom';
-import {useState} from 'react';
 
 const RegisterPage = () => {
-    const [nome, setnome] = useState('');
 
     const history = useHistory();
 
@@ -26,9 +24,9 @@ const RegisterPage = () => {
                         <h2>Create an Account</h2>
                     </div>
                     <form>
-                        <p><input className='textboxNome' placeholder='Nome' required></input></p>
-                        <p><input className='textboxEmail' type="email" placeholder='Email' required></input></p> 
-                        <p><input className='textboxPassword' type="password" placeholder='Password' maxLength={6} required></input></p>
+                        <p><input className='textboxNome' placeholder='Nome' required id='nome'></input></p>
+                        <p><input className='textboxEmail' type="email" placeholder='Email' required id='email'></input></p> 
+                        <p><input className='textboxPassword' type="password" placeholder='Password' minLength={6} required id='password'></input></p>
                         <p><button className='Sign-In'>Sign-In</button></p>
                         <p><button className='Create-an-account' onClick={handleClick}>Create-an-account</button></p>
                         <p></p>
