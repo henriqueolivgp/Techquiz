@@ -42,4 +42,4 @@ O que falta faZer:
                     - Quiz's Page
                     - Support Page
                     - Profile Page
-                    - Categoria Page
+                    - Categoria Page  
