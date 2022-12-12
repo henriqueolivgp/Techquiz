@@ -1,14 +1,22 @@
 import logoL from './img/TechquizBlack.png'
 import './Register.css'
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
+import { useState } from 'react';
 
 const RegisterPage = () => {
+
+    const [nome, setNome ] = useState([]);
+    const [email, setEmail ] = useState([]);
+    const [password, setPassword ] = useState([]);
+
+    const apiEndPoint = 'http://localhost:1400/api/utilizadores';
 
     const history = useHistory();
 
     const handleClick = () => {
         history.push('/');
-      }
+      };
 
     return ( 
             <div className="Register-content">
@@ -23,17 +31,62 @@ const RegisterPage = () => {
                         <img className='logoRg' src={logoL} alt="logo3" />
                         <h2>Create an Account</h2>
                     </div>
-                    <form>
-                        <p><input className='textboxNome' placeholder='Nome' required id='nome'></input></p>
-                        <p><input className='textboxEmail' type="email" placeholder='Email' required id='email'></input></p> 
-                        <p><input className='textboxPassword' type="password" placeholder='Password' minLength={6} required id='password'></input></p>
-                        <p><button className='Sign-In'>Sign-In</button></p>
-                        <p><button className='Create-an-account' onClick={handleClick}>Create-an-account</button></p>
-                        <p></p>
+
+                    <form onChange={(e) => (e)}>
+
+                        <p>
+                        <input 
+                            className='textboxNome' 
+                            type="text"
+                            placeholder='Nome' 
+                            id='nome'
+                            required
+                            onChange={(e) => setNome(e.target.value)}
+                            ></input>
+                        </p>
+
+                        <p>
+                        <input
+                        className='textboxEmail' 
+                        type="email" 
+                        placeholder='Email' 
+                        required 
+                        id='email'
+                        onChange={(e) => setEmail(e.target.value)}
+                        ></input></p> 
+
+                        <p>
+                        <input
+                        className='textboxPassword' 
+                        type="password" 
+                        placeholder='Password' 
+                        minLength={6} 
+                        required 
+                        id='password'
+                        onChange={(e) => setPassword(e.target.value)}
+                        ></input>
+                        </p>
+                        <p>
+                        <button 
+                        className='Sign-In'
+                        >Sign-In</button>
+                        </p>
+
+                        <p>
+                        <button 
+
+                        type="submit" 
+                        className='Create-an-account' 
+                        >Create-an-account</button>
+                        </p>
+                        <p>
+
+                        </p>
+
                     </form>
                 </div>
             </div>
     );
-}
+};
  
 export default RegisterPage;

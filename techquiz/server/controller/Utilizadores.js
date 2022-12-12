@@ -50,7 +50,7 @@ exports.delete = async (req, res) => {
 
   await UtilizadoreModel.destroy({
     where: {
-      id_utilizador: id_utilizador,
+      id_utilizador: id,
     },
   });
 
@@ -103,3 +103,5 @@ exports.login = async (req, res) => {
     token,
   });
 };
+
+
