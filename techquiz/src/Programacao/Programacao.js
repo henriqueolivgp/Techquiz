@@ -1,5 +1,4 @@
-import './Prog.css'
-import prog from './img/linguagens-de-programação-nuvem-começar-a-programar.png'
+import './Prog.css'                       
 
 const Programacao = () => {
     return ( 
@@ -9,34 +8,46 @@ const Programacao = () => {
         <a href="#/" className="frase-prog">Faça agora o quiz de Conceiros Básicos da Informática, para saber o seu nível de conhecimentos relativos a Conceitos Básicos da Informática .</a>
         </div>
         <div className="box-prog">
-            <div className="desc-prog">
-            <h1 className="tittle-prog">Indice dos conceitos basicos de informatica</h1>
-            
-            <div class="lr-container-prog">
+            <div class="grid-container-prog">
 
-                <div class="left-prog">
-            <ul>
-                <li>Sistemas Operativos</li>
-                <li>CPU</li>
-                <li>Disco rígido (HD)</li>
-                <li>Dispositivo de armazenamento de dados portáteis</li>
-                <li>Memória RAM</li>
-                <li>Monitor</li>
-                <li>Navegador</li>
-                <li>Cloud (Núvem)</li>
-                <li>Periféricos</li>
-                <li>Placa-mãe</li>
-            </ul>
-                <div className="container-button-prog">
-                    <a href="#/" className="button-prog" style={{color:"#1e9bff"}}><span>Comecar Agora</span><i></i></a>
-                </div>
+                <div class="grid-child-prog">
+                    Flex Column 1
                 </div>
 
-                <div class="rigth-prog">
-                    <img className="CB" alt="CBI" src={prog}></img>
+                <div class="grid-child-prog">
+                    Flex Column 2
                 </div>
+
+                <div class="grid-child-prog">
+                    Flex Column 3
+                </div>
+
+                <div class="grid-child-prog">
+                    Flex Column 4
+                </div>
+
             </div>
+
+            <div class="grid-container-prog">
+
+                <div class="grid-child-prog">
+                    Flex Column 1
+                </div>
+
+                <div class="grid-child-prog">
+                    Flex Column 2
+                </div>
+
+                <div class="grid-child-prog">
+                    Flex Column 3
+                </div>
+
+                <div class="grid-child-prog">
+                    Flex Column 4
+                </div>
+
             </div>
+
         </div>
     </div>
      );

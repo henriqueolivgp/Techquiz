@@ -7,7 +7,7 @@ h2{
     border-radius: 1rem;
     margin-top: 2%;
     width: 100%;
-    height: 100%;
+    height: 1000px;
 }
 
 .fraseini-prog{
@@ -26,120 +26,26 @@ h2{
     margin-left: 0.5%;
     width: 99.4%; 
     height: 588px; 
-    background: #27282c; /* neutral-300 */
+    /**background: #27282c; /* neutral-300 */
     border-radius: 10px;
   }
 
-  .tittle-prog{
-    color: white;
-    padding: 1.5%;
-  }
-
-  li {
-    color: white;
-    margin-top: 4%;
-    font-size: larger;
-  }
-
-  .button-prog {
-    margin-left: 5%;
-    padding: 0.75rem 1.5rem;
-    line-height: 84px; 
-    background: #444; /* tertiary1-500 */
-    transition: 0.2s;
-    text-decoration: none;
-  }
-
-  .button-prog:hover{
-    border: 2px solid #1e9bff;
-    color: #1e9bff;
-    letter-spacing: 0.1rem;
-    box-shadow: 0 0 35px #1e9bff;
-  }
-
-  .button-prog::before{
-
-    inset: 2px;
-    background: #27282c;
-  }
-
-  .button-prog span{
-    position: relative;
-    z-index: 1;
-  }
-
-  .button-prog i{
-    position: relative;
-  }
-
-  .button-prog  i::before{
-    content: "";
-    position: absolute;
-    top: -18px;
-    width: 10px;
-    height: 5px;
-    border: 2px solid ;
-    background: #27282c;
-    transform: translateX(-50%);
-    transition: 0.5s;
-  }
-
-  .button-prog:hover i::before{
-    left: 20%;
-    width: 20px;
-    transition: 0.5s;
-  }
-
-  .button-prog i::after{
-    content: "";
-    position: absolute;
-    bottom: -18px;
-    right: 130px;
-    width: 10px;
-    height: 5px;
-    border: 2px solid ;
-    background: #27282c;
-    transform: translateX(-50%);
-    transition: 0.5s;
-  }
-
-  .button-prog:hover i::after{
-    transition: 0.5s;
-    right: 80%;
-    width: 20px;
-  }
-
-.lr-container-prog {
+/* Style second container */
+.grid-container-prog {
     margin-top: 1%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1%;
 }
 
-.left-prog{
-    width: 55%;
-    float: left;
-    padding: 20px;
-}
-
-.rigth-prog{
-    width: 50%;
-    margin-left: 25%;
+/* Style all compunents in your box */
+.grid-child-prog{
+  margin: 1%;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color:dimgrey;
     text-align: center;
-
-}  
-
-.-prog {
-    border-radius: 2rem;
-    animation: flutuacao 5s ease-in-out infinite;
+    width: 95%;
+    height: 350px;
 }
-@keyframes flutuacao {
-  0%, 100%{
-    transform: translateY(30px);
-  }
-  50%{
-    transform: translateY(-70px);
-  }
-}
-
 

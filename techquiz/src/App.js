@@ -17,6 +17,7 @@ import ADSI from './ADSI/ADSI';
 import LoginPage from './Login/LoginPage';
 import NavbarR from './Register/NavBarR';
 import NavBarL from './Login/NavbarL';
+import ProgCateg from './Prog-Categ/ProgCateg';
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
             <Conceitos />
             <Footer />
           </Route>
-          {/* Quiz's */}
+          {/*Quiz's */}
           <Route path="/quizs">
             <NavBar/>
             <Quizs />
@@ -84,9 +85,16 @@ function App() {
             <Footer />
           </Route>
           {/* Programacao */}
-          <Route path="/programacao">
+          <Route exact path="/programacao">
             <NavBar/>
             <Programacao/>
+            <Footer />
+          </Route>
+          {/* Programacao Categorias */}
+          <Route path="/programacao/categorias">
+            <NavBar />
+            <ProgCateg />
+            <Footer />
           </Route>
         </Switch>
       </div>

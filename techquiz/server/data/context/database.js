@@ -10,3 +10,4 @@ const pool = new Sequelize({
 });
 
 module.exports = pool;
+ 
