@@ -2,12 +2,12 @@ import './App';
 import React from "react";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Quizs from './Quiz\'s/Quizs';
-import Support from './Support/Support';
+import Support from './Support/SupportPage';
 import Home from './Home/HomePage';
 import Footer from './Footer/Footer';
 import RegisterPage from './Register/RegisterPage';
 import NavBar from './NavBar/Navbar';
-import AboutUs from './AboutUS/AboutUs'
+import AboutUs from './AboutUS/AboutUsPage';
 import Profile from './Profile/Profile';
 import Conceitos from './Conceitosbasicos/Conceitosbas'
 import RDC from './RDC/RDC';
@@ -15,7 +15,7 @@ import Programacao from './Programacao/Programacao'
 import './App.css'
 import ADSI from './ADSI/ADSI';
 import LoginPage from './Login/LoginPage';
-import NavbarR from './Register/NavBarR';
+import NavbarR from './Register/NavbarR';
 import NavBarL from './Login/NavbarL';
 import ProgCateg from './Prog-Categ/ProgCateg';
 
