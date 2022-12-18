@@ -1,18 +1,18 @@
-import '../NavBar/NavBarLog.css'
+import './NavBarLog.css'
 import User from './img/user.png'
 import Logo from './img/TechquizBlack.png'
 import { Link } from 'react-router-dom'
 
 
 
-const NavBarH = () => {
+const NavBarLog = () => {
     return (
         
         <nav className="navbar">
 
             {/* Logo's div */}
             <div className='logo'>
-                <Link to="/"><img alt='' src={Logo}/></Link>
+                <Link to="/home"><img alt='' src={Logo}/></Link>
             </div>
 
             {/* links div */}   
@@ -31,11 +31,14 @@ const NavBarH = () => {
             {/* Profile */}
             <div className="profile">
                 <Link to="/profile"><img alt='' src={User}/></Link>
-            </div>        
+            </div>     
+            <div className='links-1'>
+            <Link className='Separadores' to="/">Logout</Link>
+            </div>   
 
         </nav>
         
      );
 }
  
-export default NavBarH;
+export default NavBarLog;

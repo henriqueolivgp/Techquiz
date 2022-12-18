@@ -18,6 +18,9 @@ const NavBarR = () => {
                 <Link to="/aboutus">AboutUs</Link>
                 <Link to="/sugestoes">Sugestões</Link>
             </div>
+            <div className="links1-R">
+                <a href="/login">Login</a>
+            </div>
         </nav>
      );
 }

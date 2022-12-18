@@ -18,6 +18,7 @@ import LoginPage from './Login/LoginPage';
 import NavbarR from './Register/NavBarR';
 import NavBarL from './Login/NavbarL';
 import ProgCateg from './Prog-Categ/ProgCateg';
+import NavBarLog from './NavBarLog/NavbarLog';
 
 function App() {
   return (
@@ -30,6 +31,12 @@ function App() {
             <NavBar />
             <Home />
             <Footer/>
+          </Route>
+          {/* HomeLoged */}
+          <Route path="/home">
+            <NavBarLog />
+            <Home />
+            <Footer />
           </Route>
           {/* Register */}
           <Route path="/register">
@@ -69,7 +76,7 @@ function App() {
           </Route>
           {/* Profile */}
           <Route path="/profile">
-            <NavBar />
+            <NavBarLog />
             <Profile />
           </Route>
           {/* Redes de Computadores */}

@@ -27,13 +27,13 @@ const RegisterPage = () => {
     console.log('Register Sucessefull!!');
     console.log(res);
     }catch(err){
-      console.log(err);
+      
     }
   }
   
 
 
-
+// Function for Alert and your configs
   const  notify  = ()  => {
     toast.success('Your register is Complete', {
       position: "bottom-right",
