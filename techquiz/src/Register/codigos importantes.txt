@@ -1,0 +1,43 @@
+Register Funcional com bcrypt e hash
+
+exports.register = async (req, res) => {
+  const { nome, email, password } = req.body;
+
+   // Simple validation
+   if (!nome || !email || !password) {
+    return res.status(400).json({ msg: 'Please enter all fields' });
+  }
+  
+  bcrypt.hash(password, 10).then((hash) => {
+    UtilizadoreModel.create({
+      nome: nome,
+      email: email,
+      password: hash,
+    });
+    res.json("succeess");
+  });
+  
+};
+
+// Tentativa de verificacao se o email exist
+
+ function userExists(name, email, callback) {
+  const query = 'SELECT COUNT(*) as count FROM users WHERE name = ? AND email = ?';
+  const params = [name, email];
+  connection.query(query, params, function(error, results) {
+    if (error) {
+      return callback(error);
+    }
+    callback(null, results[0].count > 0);
+  });
+}
+
+userExists('John Smith', 'john.smith@example.com', function(error, exists) {
+  if (error) {
+    console.error(error);
+  } else if (exists) {
+    console.log('User exists!');
+  } else {
+    console.log('User does not exist.');
+  }
+});

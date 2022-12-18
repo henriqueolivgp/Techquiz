@@ -1,28 +1,60 @@
+import React, { useState } from 'react';
+import axios from 'axios';
 import logoL from './img/TechquizBlack.png'
 import './Register.css'
-import { useHistory } from 'react-router-dom';
-import axios from 'axios';
-import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegisterPage = () => {
 
-    const [nome, setNome ] = useState([]);
-    const [email, setEmail ] = useState([]);
-    const [password, setPassword ] = useState([]);
+  const [inputs, setInputs] = useState({
+    nome: "",
+    email: "",
+    password: "",
 
-    const apiEndPoint = 'http://localhost:1400/api/utilizadores';
+  });
 
-    const history = useHistory();
+  const handleChange =  e =>{
 
-    const handleClick = () => {
-        history.push('/');
-      };
+    setInputs(prev=>({...prev, [e.target.name]: e.target.value}))
 
-    return ( 
-            <div className="Register-content">
-                <div class="flex-container">
+  }
+
+  const handleSubmit = async e =>{
+    e.preventDefault()
+    try{
+    const res = await axios.post("http://localhost:1400/api/utilizadores/register", inputs);
+    console.log('Register Sucessefull!!');
+    console.log(res);
+    }catch(err){
+      console.log(err);
+    }
+  }
+  
+
+
+
+  const  notify  = ()  => {
+    toast.success('Your register is Complete', {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+  };
+
+  
+
+  return (
+
+    <div className="Register-content">
+                <div className="flex-container">
                 {/* banner image */}
-                <div class="BannerR">
+                <div className="BannerR">
                     
                 </div>
             </div>
@@ -32,61 +64,61 @@ const RegisterPage = () => {
                         <h2>Create an Account</h2>
                     </div>
 
-                    <form onChange={(e) => (e)}>
+    <form>
+        <p>
+           <input 
+           className='textboxNome'
+            name="nome" 
+            type="text"
+            placeholder='Nome'
+            required
+            onChange={handleChange} /> 
+        </p>
+        <p>
+            <input 
+            className='textboxEmail' 
+            name="email" 
+            type="email" 
+            placeholder='Email'
+            required
+            onChange={handleChange} />
+        </p>
+        <p>
+            <input 
+            className='textboxPassword' 
+            name="password" 
+            type="password"
+            placeholder='Password'
+            required
+            onChange={handleChange} />
+        </p>
 
-                        <p>
-                        <input 
-                            className='textboxNome' 
-                            type="text"
-                            placeholder='Nome' 
-                            id='nome'
-                            required
-                            onChange={(e) => setNome(e.target.value)}
-                            ></input>
-                        </p>
+        
+          <button className='Create-an-account' type="submit" onClick={() => {handleSubmit(); notify()}} >Register</button>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            />
+        
+      
+      {/*<button 
+      className='Create-an-account' 
+      type="submit" 
+      onClick={ handleSubmit } 
+      >Register</button>*/}
+    </form>
 
-                        <p>
-                        <input
-                        className='textboxEmail' 
-                        type="email" 
-                        placeholder='Email' 
-                        required 
-                        id='email'
-                        onChange={(e) => setEmail(e.target.value)}
-                        ></input></p> 
-
-                        <p>
-                        <input
-                        className='textboxPassword' 
-                        type="password" 
-                        placeholder='Password' 
-                        minLength={6} 
-                        required 
-                        id='password'
-                        onChange={(e) => setPassword(e.target.value)}
-                        ></input>
-                        </p>
-                        <p>
-                        <button 
-                        className='Sign-In'
-                        >Sign-In</button>
-                        </p>
-
-                        <p>
-                        <button 
-
-                        type="submit" 
-                        className='Create-an-account' 
-                        >Create-an-account</button>
-                        </p>
-                        <p>
-
-                        </p>
-
-                    </form>
-                </div>
+    </div>
             </div>
-    );
-};
- 
+  );
+}
+
 export default RegisterPage;

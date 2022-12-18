@@ -8,6 +8,7 @@ const UtilizadoreModel = database.define(
     id_utilizador: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
+      required: true,
       primaryKey: true,
     },
 
@@ -19,11 +20,15 @@ const UtilizadoreModel = database.define(
     email: {
       type: Sequelize.STRING(50),
       allowNull: false,
+      required: true,
+      lowercase: true,
     },
 
     password: {
       type: Sequelize.STRING,
       allowNull: false,
+      select: false,
+      required: true,
     },
   }
 );

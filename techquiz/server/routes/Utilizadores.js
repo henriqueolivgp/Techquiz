@@ -8,6 +8,8 @@ UtilizadoreRouter.post("/create", controller.create);
 UtilizadoreRouter.put("/update", controller.update);
 UtilizadoreRouter.delete("/delete", controller.delete);
 
+UtilizadoreRouter.post("/register",controller.register);
+
 UtilizadoreRouter.post("/login", controller.login);
 
 

@@ -26,6 +26,10 @@
   max-height: 35px;
 }
 
+.TextLogo-L a{
+  font-size:x-large;
+}
+
 /* Inputs Textbox 393 */
 
 .textboxNome-L {
@@ -104,4 +108,8 @@
   border: none; 
   border-radius: 4px; 
   box-shadow: 0px 8px 17px #ed7d2d, 0px 0px 2px #ed7d2d; 
+}
+
+form a {
+  font-size: large;
 }
