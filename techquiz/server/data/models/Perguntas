@@ -2,45 +2,37 @@ const { Model } = require("sequelize");
 const Sequelize = require("sequelize");
 const database = require("../context/database");
 
-const UtilizadoreModel = database.define(
-  "Utilizadore" /*isto é o nome da tabela da base de dados*/,
+const PerguntasModel = database.define(
+  "Pergunta" /*isto é o nome da tabela da base de dados*/,
   {
-    id_utilizador: {
+    id_perguntas: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
       required: true,
       primaryKey: true,
     },
 
-    nome: {
+    pergunta: {
       type: Sequelize.STRING(50),
       allowNull: false,
     },
 
-    email: {
+    solucao: {
       type: Sequelize.STRING(50),
       allowNull: false,
       required: true,
       lowercase: true,
     },
 
-    password: {
+    pontos: {
       type: Sequelize.STRING,
       allowNull: false,
       select: false,
       required: true,
     },
-    
-    id_tipoutilizador: {
-      type: Sequelize.INTEGER,
-      allowNull: false,
-      select: false,
-      required: true,
-      foreignKey: true,
-    },
   }
   
 );
 
-module.exports = UtilizadoreModel;
+module.exports = PerguntasModel;
 
