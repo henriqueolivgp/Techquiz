@@ -116,6 +116,8 @@ exports.login = async (req, res) => {
     }
   });
 
+  bcrypt.hash(password, 10).then((hash) => {
+ 
   if(!user) res.json({error:"usuario nao existe"});
 
   bcrypt.compare(password, user.password).then(async(match) => {
@@ -127,6 +129,9 @@ exports.login = async (req, res) => {
     'jwtkey'
   );
   res.json(accessToken );
+ });
+
+
 /*
   res.cookie("access_token", token, {
     httpOnly: true
@@ -172,6 +177,7 @@ exports.register = async (req, res) => {
       nome: nome,
       password: hash,
       email: email,
+      
     });
     res.json("succeess")
   });

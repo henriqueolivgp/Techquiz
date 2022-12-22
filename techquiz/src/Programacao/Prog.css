@@ -49,3 +49,18 @@ h2{
     height: 350px;
 }
 
+.button-HTML{
+        top: 352px;  
+        width: 211px; 
+        height: 58px;
+        margin-top: 150px;
+        font-family: Inter; 
+        font-size: 22px; 
+        line-height: 28px;
+        color: #FFFFFFFF; 
+        background: #4069E5FF; 
+        opacity: 1; 
+        border: none; 
+        border-radius: 4px; 
+}
+

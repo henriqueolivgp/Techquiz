@@ -5,7 +5,7 @@ const database = require("../context/database");
 const TipoUtilizadorModel = database.define(
   "TipoUtilizadore" /*isto é o nome da tabela da base de dados*/,
   {
-    id_ipoutilizador: {
+    id_tipoutilizador: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
       required: true,

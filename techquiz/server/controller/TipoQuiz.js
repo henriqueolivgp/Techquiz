@@ -14,7 +14,6 @@ exports.getById = async (req, res) => {
   const id = req.params.idbatata;
 
   const tipoquiz = await TipoQuizModel.findByPk(id);
-  delete tipoquiz.password;
 
   const response = apiResponse.prepareResponse(tipoquiz);
   return apiResponse.send(res, response);

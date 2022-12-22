@@ -1,56 +1,49 @@
-import './Prog.css'                       
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
-const Programacao = () => {
-    return ( 
-        <div className="content-prog">
-        <div className="fraseini-prog">
+import "./Prog.css";
+
+function Programacao() {
+  const [post, setpost] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:1400/api/tipo-quiz").then((res) => {
+      setpost(res.data.data);
+      console.log(res.data.data);
+    });
+  }, []);
+
+  return (
+    <div className="content-prog">
+      <div className="fraseini-prog">
         <h2>Programacao</h2>
-        <a href="#/" className="frase-prog">Faça agora o quiz de Conceiros Básicos da Informática, para saber o seu nível de conhecimentos relativos a Conceitos Básicos da Informática .</a>
-        </div>
-        <div className="box-prog">
-            <div class="grid-container-prog">
-
-                <div class="grid-child-prog">
-                    Flex Column 1
+        <a href="#/" className="frase-prog">
+          Faça agora o quiz de Conceiros Básicos da Informática, para saber o
+          seu nível de conhecimentos relativos a Conceitos Básicos da
+          Informática .
+        </a>
+      </div>
+      <div className="box-prog">
+        {post?.length > 0 ? (
+          post.map((value) => {
+            return (
+              <>
+                <div className="grid-container-prog">
+                  <div className="grid-child-prog">
+                    <h2 >{value.nome}</h2>
+                    <p >{value.descricao}</p>
+                    <button className="button-HTML">Começar Quiz</button>
+                  </div>
                 </div>
-
-                <div class="grid-child-prog">
-                    Flex Column 2
-                </div>
-
-                <div class="grid-child-prog">
-                    Flex Column 3
-                </div>
-
-                <div class="grid-child-prog">
-                    Flex Column 4
-                </div>
-
-            </div>
-
-            <div class="grid-container-prog">
-
-                <div class="grid-child-prog">
-                    Flex Column 1
-                </div>
-
-                <div class="grid-child-prog">
-                    Flex Column 2
-                </div>
-
-                <div class="grid-child-prog">
-                    Flex Column 3
-                </div>
-
-                <div class="grid-child-prog">
-                    Flex Column 4
-                </div>
-
-            </div>
-
-        </div>
+              </>
+            );
+          })
+        ) : (
+          <div className="title">Data Loading.. </div>
+        )}
+      </div>
     </div>
-     );
+  );
 }
- 
+
 export default Programacao;

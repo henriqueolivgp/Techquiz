@@ -23,6 +23,7 @@ const LoginPage = () => {
     
         axios.post("http://localhost:1400/api/utilizadores/login", inputs).then( async (res,err)  => {
           console.log("Login Sucefull");
+          console.log(inputs.password);
             if(err){ 
               alert(res.send(err));
             }
