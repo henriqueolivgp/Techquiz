@@ -38,6 +38,11 @@ const UtilizadoreModel = database.define(
       required: true,
       foreignKey: true,
     },
+
+    id_tipoutilizador: {
+      type: Sequelize.INTEGER,
+      default: 0,
+    },
   }
   
 );
