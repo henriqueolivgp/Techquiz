@@ -31,7 +31,22 @@ const UtilizadoreModel = database.define(
       required: true,
     },
     
+<<<<<<< HEAD
     
+=======
+    id_tipoutilizador: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+      select: false,
+      required: true,
+      foreignKey: true,
+    },
+
+    id_tipoutilizador: {
+      type: Sequelize.INTEGER,
+      default: 0,
+    },
+>>>>>>> cd228568be0d00214053245caa0c784113444791
   }
   
 );
