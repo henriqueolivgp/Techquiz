@@ -19,7 +19,7 @@ const NavBarR = () => {
                 <Link to="/sugestoes">Sugestões</Link>
             </div>
             <div className="links1-R">
-                <a href="/login">Login</a>
+                <Link to="/login">Login</Link>
             </div>
         </nav>
      );

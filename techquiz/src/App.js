@@ -1,7 +1,6 @@
 import './App';
 import React from "react";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Quizs from './Quizs/Quizs';
 import Support from './Support/Support';
 import Home from './Home/HomePage';
 import Footer from './Footer/Footer';
@@ -19,7 +18,7 @@ import NavbarR from './Register/NavBarR';
 import NavBarL from './Login/NavbarL';
 import ProgCateg from './Prog-Categ/ProgCateg';
 import NavBarLog from './NavBarLog/NavbarLog';
-import Questoes from './Quizs/Questoes';
+import Questionario from './Questionario/Questionario'
 
 
 function App() {
@@ -61,12 +60,10 @@ function App() {
             <Conceitos />
             <Footer />
           </Route>
-          {/*Quiz's */}
-          <Route path="/quizs">
+          <Route path="/questionario/:id_quiz">
             <NavBar/>
-            <Questoes />
-            <Quizs />
-          </Route>
+            <Questionario />
+          </Route>   
           {/* Support */}
           <Route path="/support">
             <NavBar />

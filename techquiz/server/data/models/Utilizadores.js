@@ -31,7 +31,12 @@ const UtilizadoreModel = database.define(
       required: true,
     },
     
-    
+    rule: {
+      type: Sequelize.STRING,
+      allowNull: true,
+      select: false,
+      required: true,
+    }
   }
   
 );

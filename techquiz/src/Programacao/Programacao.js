@@ -1,13 +1,17 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import "./Prog.css";
 
 function Programacao() {
+
+  let history = useHistory();
+
   const [post, setpost] = useState([]);
 
-  useEffect(() => {
-    axios.get("http://localhost:1400/api/tipo-quiz").then((res) => {
+    useEffect(() => {
+    axios.get("http://localhost:1400/api/quiz").then((res) => {
       setpost(res.data.data);
       console.log(res.data.data);
     });
@@ -25,14 +29,14 @@ function Programacao() {
       </div>
       <div className="box-prog">
         {post?.length > 0 ? (
-          post.map((value) => {
+          post.map((value, key) => {
             return (
               <>
                 <div className="grid-container-prog">
                   <div className="grid-child-prog">
                     <h2 >{value.nome}</h2>
                     <p >{value.descricao}</p>
-                    <button className="button-HTML">Começar Quiz</button>
+                    <button onClick={() => {history.push(`/questionario/${value.id_quiz}`)}} className="button-HTML">Começar Quiz</button>
                   </div>
                 </div>
               </>

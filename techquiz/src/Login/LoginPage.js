@@ -1,6 +1,6 @@
 import logoR from './img/TechquizBlack.png'
 import './Login.css'
-import { useHistory } from 'react-router-dom';
+/*import { useHistory } from 'react-router-dom';*/
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -11,8 +11,6 @@ const LoginPage = () => {
         password: "",
     
       });
-
-      const [err, seterror] = useState(null)
 
       const handleChange =  e =>{
         setInputs(prev=>({...prev, [e.target.name]: e.target.value}));
@@ -33,11 +31,11 @@ const LoginPage = () => {
         });
       };
 
-    const history = useHistory();
+    /*const history = useHistory();
 
     const handleClick = () => {
         history.push('/');
-      }
+      }*/
 
     return ( 
             <div className="Login-content">
@@ -52,7 +50,7 @@ const LoginPage = () => {
                 <div className='LoginBox-L'>
                     <div className="TextLogo-L">
                         <img className='logo-Lp' src={logoR} alt="logo3" />
-                        <p><a >Login your Account</a></p>
+                        <p>Login your Account</p>
                     </div>
                     <form >
                         <p><input 
@@ -73,7 +71,7 @@ const LoginPage = () => {
                         <p><button 
                         className='Sign-In-L'
                         onClick={handleSubmit} >Sign-In</button></p>
-                        <p><a>I Forgout my Password</a></p>
+                        <p>I Forgout my Password</p>
                     </form>
                 </div>
             </div>

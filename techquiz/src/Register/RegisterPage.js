@@ -12,16 +12,15 @@ const RegisterPage = () => {
     password: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async event => {
+    event.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:1400/api/utilizadores/register",
-        inputs
+        "http://localhost:1400/api/utilizadores/register",inputs
       );
       console.log("Register Sucessefull!!");
       console.log(inputs.password);
@@ -90,10 +89,10 @@ const RegisterPage = () => {
           <button
             className="Create-an-account"
             type="submit"
-            onClick={() => {
-              handleSubmit();
-              notify();
-            }}
+            onClick={(e) => {
+              handleSubmit(e);
+              notify(e);
+          }}
           >
             Register
           </button>
