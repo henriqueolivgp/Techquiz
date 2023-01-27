@@ -31,6 +31,10 @@ const footer = () => {
                     <a href="#/" className='txt'>© 2022 Techquiz, Inc</a><a href="#/"  className='point'> . </a>
                     <a href="#/" className='txt'>Privacy</a><a href="#/" className='point'> . </a>
                     <a href="#/" className='txt'>Terms</a><a href="#/" className='point'> . </a>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> e16a7e59aa312a6aa80fdee4392b11b9774af4b8
                 </div>
                 
             </div>
