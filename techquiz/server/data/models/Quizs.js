@@ -21,12 +21,17 @@ const QuizModel = database.define(
       allowNull: false,
     },
 
-    avaliacao: {
-        type: Sequelize.STRING(250),
+    nome: {
+        type: Sequelize.STRING(50),
         allowNull: false,
       },
 
-      id_tipoquiz: {
+    tipoQuiz: {
+        type: Sequelize.STRING(250),
+        allowNull: false,
+      },
+  
+    descricao: {
         type: Sequelize.STRING(250),
         allowNull: false,
       },
