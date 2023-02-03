@@ -1,0 +1,67 @@
+h2{
+    margin-top: 2%;
+}
+
+.content-prog{
+    box-shadow: 0 0 35px #27282c;
+    border-radius: 1rem;
+    margin-top: 2%;
+    width: 100%;
+    height: 1000px;
+}
+
+.fraseini-prog{
+    padding: 1%;
+    text-align: center;
+    height: 70px;
+}
+
+.frase-prog{
+    pointer-events: none;
+    text-decoration: none;
+    color: black;
+}
+
+.box-prog {
+    margin-left: 0.5%;
+    width: 99.4%; 
+    height: 588px; 
+    /**background: #27282c; /* neutral-300 */
+    border-radius: 10px;
+  }
+
+/* Style second container */
+.grid-container-prog {
+    margin-top: 1%;
+    display: grid;
+    display: inline-block;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+}
+
+/* Style all compunents in your box */
+.grid-child-prog{
+  margin: 1%;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color:dimgrey;
+    text-align: center;
+    width: 95%;
+    height: 350px;
+}
+
+.button-HTML{
+        top: 352px;  
+        width: 211px; 
+        height: 58px;
+        margin-top: 150px;
+        font-family: Inter; 
+        font-size: 22px; 
+        line-height: 28px;
+        color: #FFFFFFFF; 
+        background: #4069E5FF; 
+        opacity: 1; 
+        border: none; 
+        border-radius: 4px; 
+}
+

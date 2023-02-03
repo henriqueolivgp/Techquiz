@@ -1,0 +1,56 @@
+*{
+  font-family: Origin Tech Demo;
+}
+
+.navbar-L {
+    border-radius: 1rem;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 10px 8px 10px #9F9F9F;
+}
+
+.navbar-L h1 {
+  color: #f1356d;
+}
+
+.logo-L{
+  margin-left: 1%;
+}
+
+.navbar-L .logo-L img{
+  max-width: 188px;
+  max-height: 35px;
+}
+
+.navbar-L .links-L {
+  font-size: medium;
+  margin-left: 1%;
+}
+
+.navbar-L .profile-L{
+  margin-left: auto;
+  font-size: medium;
+  text-decoration: none;
+} 
+
+.navbar-L .profile-L img{
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+}
+
+.navbar-L a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar-L a:hover {
+  color: #f1356d;
+}
+
+

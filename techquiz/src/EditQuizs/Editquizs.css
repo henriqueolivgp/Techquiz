@@ -1,0 +1,76 @@
+*{
+    font-family: Origin Tech Demo;
+    color: black;
+}
+
+/* Style all page */
+.containerv-quiz{
+  margin-top: 2%;
+  border-radius: 1rem;
+}
+
+/* Style first container */
+.flex-container-quiz {
+    display: flex;
+    margin-top: 1%;
+}
+
+/* Style text in first container */
+.intro-quiz{
+  margin-left: 5%;
+}
+
+/* Style Logo */
+.Logo-quiz{
+    margin-left: 5%;
+    margin-top: 10%;
+    max-width: 376%;
+    max-height: 15%;
+}
+
+/* Style left box in first container */
+.flex-child-quiz {
+    border-radius: 1rem;
+    color: white;
+    flex: 1;
+    background-color: #27282c;
+}  
+
+
+/* Style second container */
+.grid-container-quiz {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1%;
+}
+
+/* Style all compunents in your box */
+.grid-child-quiz{
+    text-align: center;
+    height: 350px;
+}
+
+ /* Style Image Coming Soon */ 
+.cs-quiz{
+    margin-top: 18%;
+    width: 150px; 
+    height: 150px;
+}
+
+.DescBtn-quiz{
+  margin-left: 32%;
+  width: 38.4%;
+  height: 290px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.Btn-quiz{
+  margin-top: 22%;
+}
+
+.Desc-quiz{
+  margin-top: 2%;
+}
+
